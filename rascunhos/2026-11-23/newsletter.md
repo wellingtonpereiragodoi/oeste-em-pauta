@@ -1,0 +1,30 @@
+**Assunto:** Milhares de vagas de emprego e destaques no Oeste Paulista
+
+Olá! Selecionamos as principais notícias do dia para manter você por dentro de tudo o que acontece na nossa região. O destaque de hoje fica por conta das milhares de vagas de emprego abertas e dos eventos locais.
+
+## Política
+
+- **Carapicuíba terá gratuidade no transporte público em dias de eleição** (Carapicuíba) — A cidade de Carapicuíba oferecerá passe livre no transporte coletivo municipal durante as datas de votação. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11248/carapicuiba-tera-transporte-gratuito-nos-dias-de-eleicao/)*
+- **Caucaia do Alto prepara programação para comemorar 82 anos** (Cotia) — O distrito de Caucaia do Alto, em Cotia, celebra 82 anos no dia 30 de novembro com eventos focados em tradições e história local. *Fonte: [Prefeitura de Cotia](https://cotia.sp.gov.br/caucaia-celebra-82-anos-com-programacao-dedicada-a-historia-a-cultura-e-as-tradicoes-do-distrito/)*
+
+## Segurança
+
+- **GCM impede tentativa de furto de motocicleta em Carapicuíba** (Carapicuíba) — A Guarda Civil Municipal agiu para conter a tentativa de furto de um veículo no bairro Vila Silviania. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11345/gcm-intervem-em-tentativa-de-furto-de-motocicleta-na-vila-silviania/)*
+- **Guarda Municipal de Carapicuíba recebe novos equipamentos** (Carapicuíba) — A corporação municipal adquiriu novos materiais para reforçar o trabalho de patrulhamento preventivo na cidade. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11246/gcm-de-carapicuiba-recebe-novos-equipamentos-para-reforcar-acoes-de-seguranca/)*
+- **Homem é preso por suspeita de violência doméstica em Barueri** (Barueri) — Um homem foi detido pela Polícia Militar no Jardim Paraíso sob suspeita de agressão e ameaças contra a companheira. Uma arma de fogo foi apreendida. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/seguranca/homem-e-preso-por-violencia-domestica-em-barueri-pm-apreende-arma-de-fogo)*
+
+## Empregos
+
+- **PAT de Cotia abre mais de 150 postos de trabalho** (Cotia) — As vagas são voltadas para profissionais com ou sem experiência em diferentes setores de atuação. *Fonte: [Prefeitura de Cotia](https://cotia.sp.gov.br/pat-de-cotia-oferece-mais-de-150-vagas-de-emprego-para-candidatos-com-e-sem-experiencia/)*
+- **PATs da região somam mais de 4,4 mil oportunidades de emprego** (Santana de Parnaíba, Barueri) — Santana de Parnaíba reúne 2.109 vagas e Barueri soma 1.211 postos. Para se candidatar, é preciso levar RG, CPF e Carteira de Trabalho. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/emprego-e-carreira/pats-de-barueri-e-cidades-da-regiao-oferecem-4406-vagas-de-emprego)*
+- **Carapicuíba promove processo seletivo para 300 vagas na logística** (Carapicuíba) — A prefeitura realiza um mutirão móvel para a contratação de auxiliares de logística. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11356/prefeitura-promove-processo-seletivo-movel-com-300-vagas-para-auxiliar-de-logistica/)*
+- **Casa do Trabalhador de Barueri divulga novas seleções de emprego** (Barueri) — As oportunidades têm processos seletivos previstos entre 24 de novembro e 2 de dezembro, com cadastro pela Carteira de Trabalho Digital. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/emprego-e-carreira/casa-do-trabalhador-de-barueri-divulga-novas-oportunidades-de-emprego)*
+
+## Geral
+
+- **Santana de Parnaíba inicia festividades do Natal de Luz** (Santana de Parnaíba) — A programação natalina do município começa no dia 27 de novembro, com apresentação do cantor Thiago Arancam. *Fonte: [Prefeitura de Santana de Parnaíba](https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/noticia/detalhe-noticia/natal-de-luz-inicia-em-27-de-novembro-com-show-de-thiago-arancam-e-programacao-especial)*
+- **Carapicuíba entra na fase final de revitalização do Calçadão** (Carapicuíba) — As obras de melhoria na área central do município avançaram para a última etapa de execução. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11351/prefeitura-de-carapicuiba-inicia-ultima-fase-de-revitalizacao-do-calcadao/)*
+- **Carapicuíba abre inscrições para a 43ª Corrida do Peru** (Carapicuíba) — Estão abertas as inscrições de atletas e moradores para participar da tradicional prova de rua da cidade. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11353/corrida-do-peru-2026-prefeitura-de-carapicuiba-abre-inscricoes-para-a-43-edicao-da-competicao/)*
+
+---
+Leia no site: https://wellingtonpereiragodoi.github.io/oeste-em-pauta/posts/2026-11-23.html

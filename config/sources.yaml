@@ -75,6 +75,7 @@ fontes:
     padrao_link: "/portal/noticias/0/3/\\d+/[^/?#]+/?"
     titulo_de: img_alt
     remover_do_titulo: "_foto\\d+$"
+    data_no_texto: "(?P<mes>JAN|FEV|MAR|ABR|MAI|JUN|JUL|AGO|SET|OUT|NOV|DEZ) (?P<dia>\\d{2})\\b"
     cidade: Carapicuíba
     ativo: true
 

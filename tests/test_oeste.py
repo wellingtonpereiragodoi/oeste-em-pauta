@@ -189,7 +189,7 @@ def test_rascunho_e_site(pasta_temporaria, monkeypatch):
     collect.coletar(NavegadorFalso(_paginas()), momento)
     noticias = draft.selecionar(datetime(2026, 11, 24, 6, 12, tzinfo=FUSO))
     ids = {n["titulo"]: n["id"] for n in noticias}
-    id_vagas = next(v for k, v in ids.items() if "300 vagas" in k)
+    id_vagas = next(v for k, v in ids.items() if "300 vagas de emprego" in k)
     id_pm = next(v for k, v in ids.items() if "PM prende" in k)
 
     resposta_ia = {
@@ -239,3 +239,21 @@ def test_ler_wordpress():
     assert itens[0]["titulo"] == "PAT de Cotia oferece mais de 150 vagas"
     assert itens[0]["publicado"].hour == 18
     assert classificar_editoria(itens[0]["titulo"]) == "empregos"
+
+
+def test_ignora_noticia_antiga_e_edital(pasta_temporaria):
+    momento = datetime(2026, 11, 23, 15, 0, tzinfo=FUSO)
+    antiga = {"titulo": "Barueri abre vagas", "link": "https://x/a", "resumo": "",
+              "publicado": datetime(2026, 11, 1, 12, tzinfo=FUSO)}
+    edital = {"titulo": "Edital de Convocação - Assembleia Geral", "link": "https://x/b", "resumo": "",
+              "publicado": None}
+    fonte = FONTES["pref-barueri"]
+    assert collect.enriquecer(antiga, fonte, SITE, momento) is None
+    assert collect.enriquecer(edital, fonte, SITE, momento) is None
+
+
+def test_data_no_texto_carapicuiba():
+    html = ('<a href="/portal/noticias/0/3/1/a/"><img alt="Noticia antiga de Carapicuiba_foto1">'
+            '<div>09 NOV 2026 - 14h37 NOV 09</div></a>')
+    itens = collect.ler_html(FONTES["pref-carapicuiba"], html, FUSO)
+    assert itens[0]["publicado"].day == 9

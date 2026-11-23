@@ -25,6 +25,9 @@ from .util import (
 log = logging.getLogger("coletor")
 
 DIAS_PARA_DEDUPLICAR = 4
+IDADE_MAXIMA_DIAS = 7  # notícias publicadas há mais tempo são ignoradas
+MESES_ABREV = {"JAN": 1, "FEV": 2, "MAR": 3, "ABR": 4, "MAI": 5, "JUN": 6,
+               "JUL": 7, "AGO": 8, "SET": 9, "OUT": 10, "NOV": 11, "DEZ": 12}
 LIMITE_SIMILARIDADE = 0.88  # títulos 88% iguais = mesma notícia
 
 
@@ -90,6 +93,8 @@ def ler_html(fonte: dict, html: str, fuso) -> list[dict]:
     padrao = re.compile(fonte["padrao_link"])
     remover = re.compile(fonte["remover_do_titulo"]) if fonte.get("remover_do_titulo") else None
     data_url = re.compile(fonte["data_na_url"]) if fonte.get("data_na_url") else None
+    data_texto = re.compile(fonte["data_no_texto"]) if fonte.get("data_no_texto") else None
+    hoje = datetime.now(fuso)
     estrategia = fonte.get("titulo_de", "texto")
 
     por_link: dict[str, dict] = {}
@@ -108,6 +113,13 @@ def ler_html(fonte: dict, html: str, fuso) -> list[dict]:
             publicado = None
             if data_url and (m := data_url.search(caminho)):
                 publicado = datetime(int(m["ano"]), int(m["mes"]), int(m["dia"]), 12, tzinfo=fuso)
+            elif data_texto and (m := data_texto.search(a.get_text(" ", strip=True).upper())):
+                mes = MESES_ABREV.get(m["mes"][:3])
+                if mes:
+                    ano = int(m["ano"]) if m.groupdict().get("ano") else hoje.year
+                    publicado = datetime(ano, mes, int(m["dia"]), 12, tzinfo=fuso)
+                    if publicado > hoje + timedelta(days=1):  # "DEZ 30" lido em janeiro
+                        publicado = publicado.replace(year=ano - 1)
             por_link[link] = {"titulo": titulo, "link": link, "resumo": "", "publicado": publicado}
 
     itens = []
@@ -135,13 +147,18 @@ def mesma_noticia(t1: str, t2: str) -> bool:
 
 def enriquecer(item: dict, fonte: dict, site: dict, momento: datetime) -> dict | None:
     texto = f"{item['titulo']} {item['resumo']}"
+    publicado = item.get("publicado")
+    if publicado and publicado < momento - timedelta(days=IDADE_MAXIMA_DIAS):
+        return None
+    titulo_norm = normalizar(item["titulo"])
+    if any(re.search(normalizar(p), titulo_norm) for p in site.get("ignorar_titulos", [])):
+        return None
     cidades_cfg = site.get("cidades", {})
     if fonte.get("filtrar_regiao") and not e_regional(texto, cidades_cfg, site.get("termos_regiao", [])):
         return None
     cidades = detectar_cidades(texto, cidades_cfg)
     if fonte.get("cidade") and fonte["cidade"] not in cidades:
         cidades.insert(0, fonte["cidade"])
-    publicado = item.get("publicado")
     return {
         "id": id_da_noticia(item["link"]),
         "titulo": item["titulo"],

@@ -24,6 +24,8 @@ log = logging.getLogger("rascunho")
 
 ORDEM_EDITORIAS = ["politica", "policial", "empregos", "cursos", "geral"]
 MAX_NOTICIAS = 45
+MAX_GERAL = 12           # notícias "gerais" (cultura, esporte, serviços) no máximo por dia
+IDADE_MAXIMA_HORAS = 72  # não resumir notícia publicada há mais de 3 dias
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto",
          "setembro", "outubro", "novembro", "dezembro"]
@@ -76,18 +78,27 @@ def data_por_extenso(d: datetime) -> str:
 def selecionar(momento: datetime) -> list[dict]:
     """Notícias coletadas nas últimas 24 horas."""
     limite = momento - timedelta(hours=24)
+    antiga = momento - timedelta(hours=IDADE_MAXIMA_HORAS)
     noticias = []
     for d in (momento, momento - timedelta(days=1)):
         for n in ler_json(PASTA_DADOS / f"{d.date().isoformat()}.json", []):
-            if datetime.fromisoformat(n["coletado_em"]) >= limite:
-                noticias.append(n)
+            if datetime.fromisoformat(n["coletado_em"]) < limite:
+                continue
+            if n.get("publicado_em") and datetime.fromisoformat(n["publicado_em"]) < antiga:
+                continue
+            noticias.append(n)
     vistos, unicas = set(), []
     for n in noticias:
         if n["id"] not in vistos:
             vistos.add(n["id"])
             unicas.append(n)
-    unicas.sort(key=lambda n: (ORDEM_EDITORIAS.index(n["editoria"]), n["coletado_em"]))
-    return unicas[:MAX_NOTICIAS]
+    # mais recentes primeiro dentro de cada editoria; "geral" limitada
+    unicas.sort(key=lambda n: n.get("publicado_em") or n["coletado_em"], reverse=True)
+    gerais = [n for n in unicas if n["editoria"] == "geral"][:MAX_GERAL]
+    principais = [n for n in unicas if n["editoria"] != "geral"]
+    selecionadas = principais + gerais
+    selecionadas.sort(key=lambda n: ORDEM_EDITORIAS.index(n["editoria"]))
+    return selecionadas[:MAX_NOTICIAS]
 
 
 def montar_prompt(noticias: list[dict], site: dict, momento: datetime) -> str:

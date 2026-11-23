@@ -29,6 +29,13 @@ cidades:
 # Termos que indicam a região como um todo (valem para o filtro regional)
 termos_regiao: [regiao oeste, cioeste, castello branco, rodoanel oeste, linha 8-diamante]
 
+# Títulos que nunca entram (expressões regulares, sem acento e em minúsculas)
+ignorar_titulos:
+  - "^edital"
+  - "edital de convocacao"
+  - "assembleia geral"
+  - "^publicidade legal"
+
 # Gemini
 gemini:
   modelo: gemini-3.5-flash

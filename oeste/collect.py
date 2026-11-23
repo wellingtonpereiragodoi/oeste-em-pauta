@@ -179,6 +179,7 @@ def coletar(navegador: Navegador | None = None, momento: datetime | None = None)
     for fonte in config_fontes():
         if not fonte.get("ativo", True):
             continue
+        log.info("Lendo %s...", fonte["nome"])
         try:
             resposta = navegador.baixar(fonte["url"])
             if fonte["tipo"] == "rss":

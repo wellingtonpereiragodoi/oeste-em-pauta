@@ -20,12 +20,16 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   construir:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip

@@ -13,12 +13,16 @@ concurrency:
   group: dados
   cancel-in-progress: false
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from urllib.parse import urlsplit
 
 import requests
@@ -9,9 +10,15 @@ import requests
 from .robots import Robots
 
 AGENTE = "OesteEmPautaBot/1.0 (+https://wellingtonpereiragodoi.github.io/oeste-em-pauta/sobre.html)"
-TEMPO_LIMITE = 25
+TEMPO_LIMITE = (10, 20)   # (conectar, esperar cada pedaço da resposta)
+TEMPO_TOTAL = 45          # segundos no máximo por página, mesmo se o site responder devagar
+TAMANHO_MAXIMO = 8_000_000
 
 log = logging.getLogger(__name__)
+
+
+class LentoDemais(Exception):
+    """O site demorou demais para responder."""
 
 
 class Bloqueado(Exception):
@@ -45,6 +52,18 @@ class Navegador:
     def baixar(self, url: str) -> requests.Response:
         if not self.robots_de(url).permite(url):
             raise Bloqueado(url)
-        r = self.sessao.get(url, timeout=TEMPO_LIMITE)
+        inicio = time.monotonic()
+        r = self.sessao.get(url, timeout=TEMPO_LIMITE, stream=True)
         r.raise_for_status()
+        pedacos, total = [], 0
+        for pedaco in r.iter_content(64 * 1024):
+            pedacos.append(pedaco)
+            total += len(pedaco)
+            if time.monotonic() - inicio > TEMPO_TOTAL:
+                r.close()
+                raise LentoDemais(f"mais de {TEMPO_TOTAL}s para baixar {url}")
+            if total > TAMANHO_MAXIMO:
+                r.close()
+                raise LentoDemais(f"página grande demais: {url}")
+        r._content = b"".join(pedacos)
         return r

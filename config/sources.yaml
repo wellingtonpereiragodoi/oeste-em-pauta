@@ -2,6 +2,7 @@
 #
 # tipo: rss  -> lê o feed RSS do site
 # tipo: html -> lê a página de lista de notícias e pega os links que batem com "padrao_link"
+# tipo: wordpress -> lê a API de posts de sites WordPress (/wp-json/wp/v2/posts)
 #
 # filtrar_regiao: true -> só aproveita notícias que citam alguma cidade/bairro da região
 #                         (use em jornais que também publicam assuntos de fora)
@@ -34,8 +35,8 @@ fontes:
 
   - id: pref-cotia
     nome: Prefeitura de Cotia
-    tipo: rss
-    url: https://cotia.sp.gov.br/feed/
+    tipo: wordpress   # o RSS de Cotia passa de 8 MB; a API é bem mais leve
+    url: https://cotia.sp.gov.br/wp-json/wp/v2/posts?per_page=20&_fields=title,link,date,excerpt
     cidade: Cotia
     ativo: true
 

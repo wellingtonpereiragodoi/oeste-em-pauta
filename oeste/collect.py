@@ -47,6 +47,24 @@ def ler_rss(fonte: dict, conteudo: bytes, fuso) -> list[dict]:
     return itens
 
 
+def ler_wordpress(fonte: dict, conteudo: bytes, fuso) -> list[dict]:
+    """Lê a API de posts de sites WordPress (mais leve que o RSS em alguns sites)."""
+    import json
+
+    itens = []
+    for p in json.loads(conteudo):
+        titulo = limpar_html(p.get("title", {}).get("rendered", ""))
+        link = p.get("link", "")
+        if not titulo or not link:
+            continue
+        publicado = None
+        if p.get("date"):
+            publicado = datetime.fromisoformat(p["date"]).replace(tzinfo=fuso)
+        resumo = limpar_html(p.get("excerpt", {}).get("rendered", ""))
+        itens.append({"titulo": titulo, "link": link, "resumo": resumo, "publicado": publicado})
+    return itens
+
+
 def _titulo_do_link(a, estrategia: str) -> str:
     if estrategia == "img_alt":
         img = a.find("img", alt=True)
@@ -184,6 +202,8 @@ def coletar(navegador: Navegador | None = None, momento: datetime | None = None)
             resposta = navegador.baixar(fonte["url"])
             if fonte["tipo"] == "rss":
                 itens = ler_rss(fonte, resposta.content, fz)
+            elif fonte["tipo"] == "wordpress":
+                itens = ler_wordpress(fonte, resposta.content, fz)
             else:
                 itens = ler_html(fonte, resposta.text, fz)
         except Bloqueado:

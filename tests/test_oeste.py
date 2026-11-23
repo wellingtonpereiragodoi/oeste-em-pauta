@@ -231,3 +231,11 @@ def test_rascunho_sem_ia(pasta_temporaria):
     r = draft.gerar(datetime(2026, 11, 24, 6, 12, tzinfo=FUSO), usar_ia=False)
     assert not r["com_ia"]
     assert "[ESCREVER]" in (pasta_temporaria / "posts" / "2026-11-24.md").read_text()
+
+
+def test_ler_wordpress():
+    dados = b'[{"date":"2026-11-23T18:50:26","link":"https://cotia.sp.gov.br/pat-de-cotia/","title":{"rendered":"PAT de Cotia oferece mais de 150 vagas"},"excerpt":{"rendered":"<p>Cotia est\\u00e1 com vagas [&hellip;]</p>"}}]'
+    itens = collect.ler_wordpress(FONTES["pref-cotia"], dados, FUSO)
+    assert itens[0]["titulo"] == "PAT de Cotia oferece mais de 150 vagas"
+    assert itens[0]["publicado"].hour == 18
+    assert classificar_editoria(itens[0]["titulo"]) == "empregos"

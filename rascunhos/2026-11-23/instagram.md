@@ -7,7 +7,7 @@
 3. Carapicuíba: Processo seletivo móvel oferta 300 vagas para auxiliar de logística
 4. Cotia: PAT tem mais de 150 postos de trabalho abertos para diferentes áreas
 5. Santana de Parnaíba: Programação do Natal de Luz tem início no dia 27 de novembro
-6. Segurança: GCM de Carapicuíba ganha novos equipamentos para patrulhamento
+6. Segurança: GCM impede tentativa de furto de moto na Vila Silviania, em Carapicuíba
 7. Esporte: Carapicuíba abre inscrições para a 43ª edição da Corrida do Peru
 
 ## Legenda

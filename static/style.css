@@ -69,6 +69,7 @@ nav a:hover { color: var(--acento); }
 }
 .texto ul { padding-left: 0; list-style: none; }
 .texto li { margin: 0 0 16px; padding-left: 16px; border-left: 3px solid var(--linha); }
+.texto li p { margin: 0; }
 .texto li em { display: block; font-size: .85rem; color: var(--suave); font-style: normal; margin-top: 2px; }
 .texto li em a { color: var(--suave); }
 .aviso { margin-top: 40px; font-size: .85rem; color: var(--suave); background: var(--papel); border: 1px solid var(--linha); border-radius: 8px; padding: 14px 16px; }

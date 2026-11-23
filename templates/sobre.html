@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block titulo %}Sobre e fontes · {{ site.nome }}{% endblock %}
+{% block conteudo %}
+<article class="post">
+  <h1>Sobre o {{ site.nome }}</h1>
+  <div class="texto">
+    <p>{{ site.descricao }}</p>
+
+    <h2>Como funciona</h2>
+    <p>Todos os dias reunimos as notícias publicadas pelas fontes abaixo, escrevemos um resumo curto
+      de cada uma com nossas próprias palavras e indicamos o link para a matéria original.
+      Os resumos são preparados com ajuda de inteligência artificial e <strong>revisados por uma pessoa
+      antes de serem publicados</strong>.</p>
+
+    <h2>Política editorial</h2>
+    <ul>
+      <li>Não reproduzimos textos, fotos ou vídeos das fontes: cada notícia traz um resumo próprio e o link para o original.</li>
+      <li>Em notícias policiais, tratamos todos como suspeitos até decisão da Justiça e não divulgamos nomes de suspeitos, vítimas ou menores de idade.</li>
+      <li>Em política, descrevemos os fatos sem tomar partido.</li>
+      <li>Vagas de emprego e cursos são divulgados como informados pelos órgãos oficiais — confirme sempre na fonte antes de se inscrever.</li>
+      <li>Corrigimos erros assim que avisados. Pedidos de correção ou remoção: <a href="mailto:{{ site.contato }}">{{ site.contato }}</a>.</li>
+    </ul>
+
+    <h2>Fontes acompanhadas</h2>
+    <ul>
+      {% for f in fontes %}<li><a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.nome }}</a></li>{% endfor %}
+      <li>Postos de Atendimento ao Trabalhador (PATs), Emprega SP, Qualifica SP, Senai e Centro Paula Souza (empregos e cursos)</li>
+    </ul>
+  </div>
+</article>
+{% endblock %}

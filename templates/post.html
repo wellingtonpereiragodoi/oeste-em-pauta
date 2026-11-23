@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block titulo %}{{ post.titulo }} · {{ site.nome }}{% endblock %}
+{% block descricao %}{{ post.descricao or site.slogan }}{% endblock %}
+{% block conteudo %}
+<article class="post">
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Todos os resumos</a> · {{ post.data_curta }}</p>
+  <h1>{{ post.titulo }}</h1>
+  <div class="texto">
+    {{ post.html | safe }}
+  </div>
+  <p class="aviso">Resumo produzido a partir das fontes indicadas em cada notícia e revisado antes da publicação.
+    Encontrou um erro? Escreva para <a href="mailto:{{ site.contato }}">{{ site.contato }}</a>.</p>
+</article>
+{% endblock %}

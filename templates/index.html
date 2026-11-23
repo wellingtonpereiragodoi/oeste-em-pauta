@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<section class="chamada">
+  <h1>{{ site.slogan }}</h1>
+  <p>Política, segurança, vagas de emprego e cursos gratuitos de Santana de Parnaíba, Barueri,
+    Osasco, Carapicuíba, Itapevi, Jandira, Cotia, Cajamar e Pirapora do Bom Jesus.</p>
+</section>
+
+{% if posts %}
+  {% set destaque = posts[0] %}
+  <article class="destaque">
+    <p class="rotulo">Resumo mais recente · {{ destaque.data_curta }}</p>
+    <h2><a href="posts/{{ destaque.slug }}.html">{{ destaque.titulo }}</a></h2>
+    {% if destaque.descricao %}<p class="desc">{{ destaque.descricao }}</p>{% endif %}
+    <p class="etiquetas">{% for e in destaque.editorias %}<span class="etiqueta">{{ e }}</span>{% endfor %}</p>
+    <a class="botao" href="posts/{{ destaque.slug }}.html">Ler o resumo</a>
+  </article>
+
+  {% if posts|length > 1 %}
+  <h2 class="secao-titulo">Resumos anteriores</h2>
+  <ul class="lista">
+    {% for p in posts[1:] %}
+    <li>
+      <span class="data">{{ p.data_curta }}</span>
+      <a href="posts/{{ p.slug }}.html">{{ p.titulo }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% else %}
+  <p class="vazio">O primeiro resumo será publicado em breve.</p>
+{% endif %}
+{% endblock %}

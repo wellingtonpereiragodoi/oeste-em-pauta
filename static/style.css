@@ -1,0 +1,86 @@
+:root {
+  --fundo: #faf8f4;
+  --papel: #ffffff;
+  --tinta: #1d1f22;
+  --suave: #5f6368;
+  --linha: #e6e1d8;
+  --acento: #c2410c;
+  --acento-escuro: #9a3412;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--tinta);
+  font: 17px/1.6 var(--sans);
+}
+a { color: var(--acento-escuro); }
+a:hover { color: var(--acento); }
+
+.largura { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+/* topo */
+.topo { background: var(--papel); border-bottom: 1px solid var(--linha); }
+.topo .largura { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
+.marca { font: 700 1.35rem/1 var(--serif); color: var(--tinta); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.marca-ponto { width: 14px; height: 14px; border-radius: 50%; background: var(--acento); box-shadow: 0 0 0 4px #fed7aa; }
+nav { display: flex; gap: 18px; font-size: .92rem; }
+nav a { color: var(--suave); text-decoration: none; }
+nav a:hover { color: var(--acento); }
+
+/* home */
+.chamada { padding: 44px 0 20px; }
+.chamada h1 { font: 700 2rem/1.2 var(--serif); margin: 0 0 12px; }
+.chamada p { color: var(--suave); margin: 0; }
+
+.destaque {
+  background: var(--papel); border: 1px solid var(--linha); border-top: 4px solid var(--acento);
+  border-radius: 10px; padding: 26px 28px; margin: 24px 0 40px;
+}
+.destaque h2 { font: 700 1.6rem/1.25 var(--serif); margin: 6px 0 10px; }
+.destaque h2 a { color: var(--tinta); text-decoration: none; }
+.destaque h2 a:hover { color: var(--acento); }
+.desc { color: var(--suave); margin: 0 0 14px; }
+.rotulo { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); margin: 0; }
+.rotulo a { color: var(--suave); text-decoration: none; }
+.etiquetas { margin: 0 0 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+.etiqueta { font-size: .78rem; background: #fff1e6; color: var(--acento-escuro); padding: 3px 10px; border-radius: 99px; }
+.botao { display: inline-block; background: var(--acento); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: .95rem; }
+.botao:hover { background: var(--acento-escuro); color: #fff; }
+
+.secao-titulo { font: 700 1.15rem var(--serif); border-bottom: 1px solid var(--linha); padding-bottom: 8px; }
+.lista { list-style: none; padding: 0; margin: 0 0 48px; }
+.lista li { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--linha); align-items: baseline; }
+.lista .data { flex: 0 0 96px; font-size: .85rem; color: var(--suave); }
+.lista a { color: var(--tinta); text-decoration: none; font-weight: 600; }
+.lista a:hover { color: var(--acento); }
+.vazio { color: var(--suave); padding: 40px 0; }
+
+/* post */
+.post { padding: 36px 0 24px; }
+.post h1 { font: 700 2.1rem/1.2 var(--serif); margin: 8px 0 24px; }
+.texto h2 {
+  font: 700 1.25rem var(--serif); margin: 36px 0 12px; padding-top: 14px;
+  border-top: 2px solid var(--tinta);
+}
+.texto ul { padding-left: 0; list-style: none; }
+.texto li { margin: 0 0 16px; padding-left: 16px; border-left: 3px solid var(--linha); }
+.texto li em { display: block; font-size: .85rem; color: var(--suave); font-style: normal; margin-top: 2px; }
+.texto li em a { color: var(--suave); }
+.aviso { margin-top: 40px; font-size: .85rem; color: var(--suave); background: var(--papel); border: 1px solid var(--linha); border-radius: 8px; padding: 14px 16px; }
+
+/* rodapé */
+.rodape { border-top: 1px solid var(--linha); background: var(--papel); margin-top: 40px; padding: 24px 0; font-size: .85rem; color: var(--suave); }
+.rodape p { margin: 6px 0; }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .chamada h1 { font-size: 1.6rem; }
+  .post h1 { font-size: 1.7rem; }
+  .destaque { padding: 20px; }
+  .lista li { flex-direction: column; gap: 2px; }
+}

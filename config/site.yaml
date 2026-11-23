@@ -1,0 +1,34 @@
+# Configurações gerais do site
+nome: Oeste em Pauta
+slogan: As notícias da Região Oeste da Grande SP, todo dia, num só lugar
+descricao: >
+  Resumo diário de política, segurança, empregos e cursos gratuitos de Santana de Parnaíba,
+  Barueri, Osasco, Carapicuíba, Itapevi, Jandira, Cotia, Cajamar e Pirapora do Bom Jesus.
+
+# Endereço público do site (usado no feed RSS). Troque quando tiver domínio próprio.
+url: https://wellingtonpereiragodoi.github.io/oeste-em-pauta
+
+# Contato para correções e pedidos de remoção (obrigatório mostrar no site)
+contato: contato@exemplo.com.br
+
+fuso: America/Sao_Paulo
+
+# Cidades e bairros usados para filtrar notícias regionais e marcar a cidade de cada notícia.
+# A chave é o nome da cidade; a lista são termos que indicam aquela cidade.
+cidades:
+  Santana de Parnaíba: [santana de parnaiba, fazendinha, cururuquara]
+  Barueri: [barueri, alphaville, tambore, aldeia da serra, jardim belval]
+  Osasco: [osasco, presidente altino, quitauna, km 18, rochdale]
+  Carapicuíba: [carapicuiba, cohab carapicuiba]
+  Itapevi: [itapevi, amador bueno]
+  Jandira: [jandira]
+  Cotia: [cotia, granja viana, caucaia do alto]
+  Cajamar: [cajamar, jordanesia, polvilho]
+  Pirapora do Bom Jesus: [pirapora do bom jesus, pirapora]
+
+# Termos que indicam a região como um todo (valem para o filtro regional)
+termos_regiao: [regiao oeste, cioeste, castello branco, rodoanel oeste, linha 8-diamante]
+
+# Gemini
+gemini:
+  modelo: gemini-3.5-flash

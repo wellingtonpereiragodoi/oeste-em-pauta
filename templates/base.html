@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block titulo %}{{ site.nome }}{% endblock %}</title>
+  <meta name="description" content="{% block descricao %}{{ site.slogan }}{% endblock %}">
+  <link rel="stylesheet" href="{{ raiz }}static/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.nome }}" href="{{ raiz }}feed.xml">
+</head>
+<body>
+  <header class="topo">
+    <div class="largura">
+      <a class="marca" href="{{ raiz }}index.html">
+        <span class="marca-ponto" aria-hidden="true"></span>{{ site.nome }}
+      </a>
+      <nav>
+        <a href="{{ raiz }}index.html">Resumos</a>
+        <a href="{{ raiz }}sobre.html">Sobre e fontes</a>
+        <a href="{{ raiz }}feed.xml">RSS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="largura">
+    {% block conteudo %}{% endblock %}
+  </main>
+
+  <footer class="rodape">
+    <div class="largura">
+      <p>{{ site.nome }} reúne e resume notícias publicadas por jornais da região e órgãos públicos.
+        Cada notícia traz o link para a fonte original — leia a matéria completa lá.</p>
+      <p>Correções ou pedidos de remoção: <a href="mailto:{{ site.contato }}">{{ site.contato }}</a>
+        · <a href="{{ raiz }}sobre.html">Política editorial</a> · © {{ ano }}</p>
+    </div>
+  </footer>
+</body>
+</html>

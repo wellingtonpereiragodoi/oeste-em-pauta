@@ -1,0 +1,87 @@
+# Fontes de notícias do Oeste em Pauta
+#
+# tipo: rss  -> lê o feed RSS do site
+# tipo: html -> lê a página de lista de notícias e pega os links que batem com "padrao_link"
+#
+# filtrar_regiao: true -> só aproveita notícias que citam alguma cidade/bairro da região
+#                         (use em jornais que também publicam assuntos de fora)
+# cidade: cidade padrão quando a fonte é de uma prefeitura
+# ativo: false -> fonte desligada (sem apagar a configuração)
+
+fontes:
+  # ---------- Jornais regionais (RSS) ----------
+  - id: folha-alphaville
+    nome: Folha de Alphaville
+    tipo: rss
+    url: https://www.folhadealphaville.com.br/feed
+    filtrar_regiao: true
+    ativo: true
+
+  - id: jornal-barueri
+    nome: Jornal de Barueri
+    tipo: rss
+    url: https://www.jornaldebarueri.com.br/feed
+    filtrar_regiao: true
+    ativo: true
+
+  # ---------- Prefeituras com RSS ----------
+  - id: pref-osasco
+    nome: Prefeitura de Osasco
+    tipo: rss
+    url: https://osasco.sp.gov.br/feed
+    cidade: Osasco
+    ativo: true
+
+  - id: pref-cotia
+    nome: Prefeitura de Cotia
+    tipo: rss
+    url: https://cotia.sp.gov.br/feed/
+    cidade: Cotia
+    ativo: true
+
+  - id: pref-itapevi
+    nome: Prefeitura de Itapevi
+    tipo: rss
+    url: https://itapevi.sp.gov.br/feed
+    cidade: Itapevi
+    ativo: false   # feed parado desde 17/06/2026 - religar se voltar a atualizar
+
+  # ---------- Prefeituras sem RSS (leitura da página de notícias) ----------
+  - id: pref-santana-de-parnaiba
+    nome: Prefeitura de Santana de Parnaíba
+    tipo: html
+    url: https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma
+    padrao_link: "/Plataforma/noticia/detalhe-noticia/[^/?#]+"
+    titulo_de: texto
+    cidade: Santana de Parnaíba
+    ativo: true
+
+  - id: pref-barueri
+    nome: Prefeitura de Barueri
+    tipo: html
+    url: https://portal.barueri.sp.gov.br/Noticia/VerTodas
+    padrao_link: "/Noticia/\\d{2}-\\d{2}-\\d{4}-[^/?#]+"
+    titulo_de: texto
+    remover_do_titulo: "^\\d{2}\\.\\d{2}(\\.\\d{4})?\\s+"
+    data_na_url: "/Noticia/(?P<dia>\\d{2})-(?P<mes>\\d{2})-(?P<ano>\\d{4})-"
+    cidade: Barueri
+    ativo: true
+
+  - id: pref-carapicuiba
+    nome: Prefeitura de Carapicuíba
+    tipo: html
+    url: https://www.carapicuiba.sp.gov.br/portal/noticias
+    padrao_link: "/portal/noticias/0/3/\\d+/[^/?#]+/?"
+    titulo_de: img_alt
+    remover_do_titulo: "_foto\\d+$"
+    cidade: Carapicuíba
+    ativo: true
+
+  - id: pref-jandira
+    nome: Prefeitura de Jandira
+    tipo: html
+    url: https://portal.jandira.sp.gov.br/Noticias
+    padrao_link: "/[Nn]oticia[s]?/[^/?#]+"
+    titulo_de: texto
+    cidade: Jandira
+    ativo: false   # a página carrega as notícias por JavaScript; precisa de outro método

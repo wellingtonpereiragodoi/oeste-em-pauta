@@ -1,0 +1,68 @@
+name: Rascunho do dia
+
+on:
+  schedule:
+    # todo dia às 6h12 (horário de Brasília)
+    - cron: "12 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dados
+  cancel-in-progress: false
+
+jobs:
+  rascunho:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Coleta de última hora
+        run: python -m oeste.collect
+
+      - name: Gerar rascunhos com o Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m oeste.draft
+
+      - name: Data de hoje
+        id: hoje
+        run: |
+          echo "dia=$(TZ=America/Sao_Paulo date +%F)" >> "$GITHUB_OUTPUT"
+          echo "br=$(TZ=America/Sao_Paulo date +%d/%m/%Y)" >> "$GITHUB_OUTPUT"
+
+      - name: Montar descrição do Pull Request
+        run: |
+          {
+            echo "## Resumo do dia ${{ steps.hoje.outputs.br }} — aguardando sua aprovação"
+            echo
+            echo "**Como aprovar:** confira os arquivos na aba *Files changed*. Para corrigir algo, abra o arquivo, clique no lápis ✏️, edite e salve (*Commit changes*). Quando estiver tudo certo, clique em **Merge pull request** — o site é publicado em seguida."
+            echo
+            echo "**Para descartar:** clique em *Close pull request*."
+            echo
+            echo "- Post do site: \`conteudo/posts/${{ steps.hoje.outputs.dia }}.md\`"
+            echo "- Newsletter, TikTok e Instagram: pasta \`rascunhos/${{ steps.hoje.outputs.dia }}/\` (não vão para o site; copie e poste nas redes)"
+            echo
+            cat "rascunhos/${{ steps.hoje.outputs.dia }}/revisao.md" 2>/dev/null || echo "(sem notícias hoje)"
+          } > /tmp/descricao.md
+
+      - name: Abrir Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: rascunho/${{ steps.hoje.outputs.dia }}
+          commit-message: "Rascunho do dia ${{ steps.hoje.outputs.br }}"
+          title: "📰 Resumo do dia ${{ steps.hoje.outputs.br }} — revisar e aprovar"
+          body-path: /tmp/descricao.md
+          add-paths: |
+            conteudo/posts/*.md
+            rascunhos/**
+          labels: rascunho
+          delete-branch: true

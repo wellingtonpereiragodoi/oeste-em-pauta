@@ -150,6 +150,7 @@ def pasta_temporaria(tmp_path, monkeypatch):
         if hasattr(modulo, "PASTA_RASCUNHOS"):
             monkeypatch.setattr(modulo, "PASTA_RASCUNHOS", tmp_path / "rascunhos")
     monkeypatch.setattr(build, "SAIDA", tmp_path / "_site")
+    monkeypatch.setattr(draft, "ARQ_OFERECIDAS", tmp_path / "oferecidas.json")
     return tmp_path
 
 
@@ -257,3 +258,25 @@ def test_data_no_texto_carapicuiba():
             '<div>09 NOV 2026 - 14h37 NOV 09</div></a>')
     itens = collect.ler_html(FONTES["pref-carapicuiba"], html, FUSO)
     assert itens[0]["publicado"].day == 9
+
+
+def test_nao_repete_noticia_ja_publicada(pasta_temporaria):
+    collect.coletar(NavegadorFalso(_paginas()), datetime(2026, 11, 23, 15, 0, tzinfo=FUSO))
+    (pasta_temporaria / "posts").mkdir(parents=True, exist_ok=True)
+    (pasta_temporaria / "posts" / "2026-11-23.md").write_text(
+        "- **x** *Fonte: [J](https://jornal.exemplo/barueri-vagas)*", encoding="utf-8")
+    titulos = [n["titulo"] for n in draft.selecionar(datetime(2026, 11, 24, 6, 12, tzinfo=FUSO))]
+    assert not any("300 vagas de emprego" in t for t in titulos)
+    assert any("PM prende" in t for t in titulos)
+
+
+def test_policial_nao_por_orgao_no_resumo():
+    assert classificar_editoria("Corrida Pela Vida reúne famílias em Cotia",
+                                "Promovida pela Guarda Civil Municipal") == "geral"
+    assert classificar_editoria("Ação em Osasco", "Suspeito foi preso pela GCM") == "policial"
+
+
+def test_nao_repete_noticia_ja_oferecida(pasta_temporaria, monkeypatch):
+    collect.coletar(NavegadorFalso(_paginas()), datetime(2026, 11, 23, 15, 0, tzinfo=FUSO))
+    draft.gerar(datetime(2026, 11, 23, 20, 0, tzinfo=FUSO), usar_ia=False)
+    assert draft.selecionar(datetime(2026, 11, 24, 6, 12, tzinfo=FUSO)) == []

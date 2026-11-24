@@ -17,13 +17,14 @@ from datetime import datetime, timedelta
 from .classify import EDITORIAS
 from .gemini import ErroGemini, gerar_json
 from .util import (
-    PASTA_DADOS, PASTA_POSTS, PASTA_RASCUNHOS, agora, config_site, encurtar, ler_json,
+    PASTA_DADOS, PASTA_POSTS, PASTA_RASCUNHOS, agora, config_site, encurtar, gravar_json, ler_json,
 )
 
 log = logging.getLogger("rascunho")
 
 ORDEM_EDITORIAS = ["politica", "policial", "empregos", "cursos", "geral"]
 MAX_NOTICIAS = 45
+ARQ_OFERECIDAS = PASTA_DADOS.parent / "oferecidas.json"  # notícias já enviadas a um rascunho
 MAX_GERAL = 12           # notícias "gerais" (cultura, esporte, serviços) no máximo por dia
 IDADE_MAXIMA_HORAS = 72  # não resumir notícia publicada há mais de 3 dias
 
@@ -75,8 +76,22 @@ def data_por_extenso(d: datetime) -> str:
     return f"{d.day} de {MESES[d.month - 1]} de {d.year}"
 
 
+def links_ja_publicados(antes_de: str) -> set[str]:
+    """Links que já apareceram em resumos anteriores (para não repetir notícia)."""
+    import re as _re
+
+    links = set()
+    if PASTA_POSTS.exists():
+        for p in PASTA_POSTS.glob("*.md"):
+            if p.stem < antes_de:
+                links.update(_re.findall(r"\]\((https?://[^)\s]+)\)", p.read_text(encoding="utf-8")))
+    return links
+
+
 def selecionar(momento: datetime) -> list[dict]:
-    """Notícias coletadas nas últimas 24 horas."""
+    """Notícias coletadas nas últimas 24 horas que ainda não saíram em resumos anteriores."""
+    publicados = links_ja_publicados(momento.date().isoformat())
+    oferecidas = set(ler_json(ARQ_OFERECIDAS, {}).get("ids", []))
     limite = momento - timedelta(hours=24)
     antiga = momento - timedelta(hours=IDADE_MAXIMA_HORAS)
     noticias = []
@@ -85,6 +100,8 @@ def selecionar(momento: datetime) -> list[dict]:
             if datetime.fromisoformat(n["coletado_em"]) < limite:
                 continue
             if n.get("publicado_em") and datetime.fromisoformat(n["publicado_em"]) < antiga:
+                continue
+            if n["id"] in oferecidas or n["link"] in publicados or any(o["link"] in publicados for o in n.get("outras_fontes", [])):
                 continue
             noticias.append(n)
     vistos, unicas = set(), []
@@ -250,6 +267,9 @@ def gerar(momento: datetime | None = None, usar_ia: bool = True) -> dict:
     if resp is None:
         resp = rascunho_sem_ia(noticias, site, momento)
     resultado = escrever_arquivos(resp, noticias, site, momento, com_ia)
+    registro = ler_json(ARQ_OFERECIDAS, {"ids": []})
+    registro["ids"] = sorted(set(registro["ids"]) | {n["id"] for n in noticias})[-3000:]
+    gravar_json(ARQ_OFERECIDAS, registro)
     resultado["noticias"] = len(noticias)
     resultado["com_ia"] = com_ia
     return resultado

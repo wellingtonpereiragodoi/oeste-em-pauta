@@ -48,12 +48,23 @@ _REGEX = {
 }
 
 
+# Palavras que só indicam o órgão (ex.: "promovida pela Guarda Civil"), não um crime.
+# No resumo elas não bastam para classificar como policial.
+POLICIAL_FRACAS = {"policia", "policial", "pm", "gcm", "guarda civil", "delegacia", "investigacao"}
+
+
 def classificar_editoria(titulo: str, resumo: str = "") -> str:
     # o título pesa mais: se ele já define a editoria, o resumo não é consultado
-    for texto in (normalizar(titulo), normalizar(f"{titulo} {resumo}")):
-        for editoria, regex in _REGEX.items():
-            if regex.search(texto):
-                return editoria
+    for editoria, regex in _REGEX.items():
+        if regex.search(normalizar(titulo)):
+            return editoria
+    texto = normalizar(f"{titulo} {resumo}")
+    for editoria, regex in _REGEX.items():
+        achados = set(regex.findall(texto))
+        if editoria == "policial":
+            achados -= POLICIAL_FRACAS
+        if achados:
+            return editoria
     return "geral"
 
 

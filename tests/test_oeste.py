@@ -225,6 +225,14 @@ def test_rascunho_e_site(pasta_temporaria, monkeypatch):
     pagina = (pasta_temporaria / "_site" / "posts" / "2026-11-24.html").read_text()
     assert "300 vagas em Barueri" in pagina and 'target="_blank"' in pagina
     assert (pasta_temporaria / "_site" / "feed.xml").exists()
+    assert "wa.me" in pagina  # botão de compartilhar
+    site = pasta_temporaria / "_site"
+    assert "300 vagas em Barueri" in (site / "cidade" / "barueri.html").read_text()
+    assert "300 vagas em Barueri" in (site / "editoria" / "empregos.html").read_text()
+    assert (site / "cidade" / "cajamar.html").exists() and (site / "arquivo.html").exists()
+    import json
+    indice = json.loads((site / "busca.json").read_text())
+    assert any(n["t"] == "Suspeito detido em Alphaville" and n["e"] == "Segurança" for n in indice)
 
 
 def test_rascunho_sem_ia(pasta_temporaria):

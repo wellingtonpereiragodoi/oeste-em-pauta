@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block titulo %}Anuncie · {{ site.nome }}{% endblock %}
+{% block descricao %}Anuncie no {{ site.nome }} e fale com moradores da Região Oeste da Grande SP.{% endblock %}
+{% block conteudo %}
+<article class="post">
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Início</a></p>
+  <h1>Anuncie no {{ site.nome }}</h1>
+  <div class="texto">
+    <p>O {{ site.nome }} publica todos os dias um resumo das notícias de Santana de Parnaíba, Barueri,
+      Osasco, Carapicuíba, Itapevi, Jandira, Cotia, Cajamar e Pirapora do Bom Jesus. É um jeito
+      direto de falar com quem mora e trabalha na Região Oeste.</p>
+
+    <h2>Formatos</h2>
+    <ul>
+      <li><strong>Apoio do dia</strong> — sua marca em destaque no resumo diário do site.</li>
+      <li><strong>Banner</strong> — espaço na página inicial e nas páginas das cidades.</li>
+      <li><strong>Vagas e cursos</strong> — divulgação de processos seletivos e cursos da sua empresa ou escola.</li>
+    </ul>
+
+    <h2>Regras</h2>
+    <ul>
+      <li>Todo conteúdo pago é identificado como publicidade.</li>
+      <li>Anúncios não influenciam a escolha nem o texto das notícias.</li>
+      <li>Não aceitamos propaganda política paga nem anúncios enganosos.</li>
+    </ul>
+
+    <h2>Fale com a gente</h2>
+    <p>Mande um e-mail contando sobre o seu negócio e o que você quer divulgar. Respondemos com valores e datas disponíveis.</p>
+    <p><a class="botao" href="mailto:{{ site.contato }}?subject=Quero%20anunciar%20no%20{{ site.nome | urlencode }}">Escrever para {{ site.contato }}</a></p>
+  </div>
+</article>
+{% endblock %}

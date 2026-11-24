@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block titulo %}Buscar · {{ site.nome }}{% endblock %}
+{% block conteudo %}
+<section class="cabeca-lista">
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Início</a></p>
+  <h1>Buscar notícias</h1>
+  <form class="busca" role="search" onsubmit="return false">
+    <input id="q" type="search" placeholder="Ex.: vagas Barueri, curso, Castello…" autocomplete="off" autofocus>
+  </form>
+  <p id="status" class="rotulo"></p>
+</section>
+<div id="resultados" class="cards"></div>
+
+<script>
+(function () {
+  var dados = [], campo = document.getElementById("q"), saida = document.getElementById("resultados"),
+      status = document.getElementById("status");
+  function norm(s) { return (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]; }); }
+  function slug(s) { return norm(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  function buscar() {
+    var termos = norm(campo.value).split(/\s+/).filter(Boolean);
+    history.replaceState(null, "", termos.length ? "?q=" + encodeURIComponent(campo.value) : location.pathname);
+    if (!termos.length) { saida.innerHTML = ""; status.textContent = dados.length + " notícias para buscar"; return; }
+    var achados = dados.filter(function (n) {
+      var alvo = norm([n.t, n.x, n.e, n.c.join(" "), n.f].join(" "));
+      return termos.every(function (t) { return alvo.indexOf(t) >= 0; });
+    }).slice(0, 60);
+    status.textContent = achados.length ? achados.length + (achados.length > 1 ? " notícias encontradas" : " notícia encontrada") : "Nada encontrado. Tente outra palavra.";
+    saida.innerHTML = achados.map(function (n) {
+      return '<article class="card ed-' + slug(n.e) + '"><p class="card-meta"><a class="card-ed" href="editoria/' + slug(n.e) + '.html">' + esc(n.e) + "</a> "
+        + n.c.map(function (c) { return '· <a href="cidade/' + slug(c) + '.html">' + esc(c) + "</a> "; }).join("")
+        + "</p><h3>" + esc(n.t) + "</h3><p>" + esc(n.x) + '</p><p class="card-fonte">Fonte: ' + esc(n.f)
+        + ' · <a href="posts/' + n.p + '.html">resumo de ' + esc(n.d) + "</a></p></article>";
+    }).join("");
+  }
+  campo.addEventListener("input", buscar);
+  fetch("busca.json").then(function (r) { return r.json(); }).then(function (j) {
+    dados = j;
+    var q = new URLSearchParams(location.search).get("q");
+    if (q) campo.value = q;
+    buscar();
+  }).catch(function () { status.textContent = "Não foi possível carregar a busca agora."; });
+})();
+</script>
+{% endblock %}

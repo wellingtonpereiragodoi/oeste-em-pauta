@@ -12,20 +12,33 @@
     <p class="rotulo">Resumo mais recente · {{ destaque.data_curta }}</p>
     <h2><a href="posts/{{ destaque.slug }}.html">{{ destaque.titulo }}</a></h2>
     {% if destaque.descricao %}<p class="desc">{{ destaque.descricao }}</p>{% endif %}
-    <p class="etiquetas">{% for e in destaque.editorias %}<span class="etiqueta">{{ e }}</span>{% endfor %}</p>
-    <a class="botao" href="posts/{{ destaque.slug }}.html">Ler o resumo</a>
+    <p class="etiquetas">{% for e in destaque.editorias %}<a class="etiqueta ed-{{ slug(e) }}" href="editoria/{{ slug(e) }}.html">{{ e }}</a>{% endfor %}</p>
+    <a class="botao" href="posts/{{ destaque.slug }}.html">Ler o resumo completo</a>
   </article>
+
+  {% if ultimas %}
+  <h2 class="secao-titulo">Últimas notícias</h2>
+  <div class="cards">
+    {% for n in ultimas %}{% include "_noticia.html" %}{% endfor %}
+  </div>
+  {% endif %}
+
+  <h2 class="secao-titulo">Notícias da sua cidade</h2>
+  <div class="cidades">
+    {% for c in cidades %}<a href="cidade/{{ c.slug }}.html"><span>{{ c.nome }}</span>{% if c.total %}<small>{{ c.total }} notícia{{ 's' if c.total > 1 }}</small>{% endif %}</a>{% endfor %}
+  </div>
 
   {% if posts|length > 1 %}
   <h2 class="secao-titulo">Resumos anteriores</h2>
   <ul class="lista">
-    {% for p in posts[1:] %}
+    {% for p in posts[1:8] %}
     <li>
       <span class="data">{{ p.data_curta }}</span>
       <a href="posts/{{ p.slug }}.html">{{ p.titulo }}</a>
     </li>
     {% endfor %}
   </ul>
+  <p class="mais"><a href="arquivo.html">Ver todos os resumos →</a></p>
   {% endif %}
 {% else %}
   <p class="vazio">O primeiro resumo será publicado em breve.</p>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block titulo %}Arquivo · {{ site.nome }}{% endblock %}
+{% block conteudo %}
+<section class="cabeca-lista">
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Início</a></p>
+  <h1>Todos os resumos</h1>
+</section>
+{% for m in meses %}
+  <h2 class="secao-titulo">{{ m.nome }}</h2>
+  <ul class="lista">
+    {% for p in m.posts %}
+    <li>
+      <span class="data">{{ p.data_curta }}</span>
+      <a href="posts/{{ p.slug }}.html">{{ p.titulo }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="vazio">O primeiro resumo será publicado em breve.</p>
+{% endfor %}
+{% endblock %}

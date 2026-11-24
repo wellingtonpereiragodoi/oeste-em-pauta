@@ -1,13 +1,25 @@
 {% extends "base.html" %}
 {% block titulo %}{{ post.titulo }} · {{ site.nome }}{% endblock %}
 {% block descricao %}{{ post.descricao or site.slogan }}{% endblock %}
+{% block cabeca %}
+  {% set endereco = site.url ~ "/posts/" ~ post.slug ~ ".html" %}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ post.titulo }}">
+  <meta property="og:description" content="{{ post.descricao or site.slogan }}">
+  <meta property="og:url" content="{{ endereco }}">
+  <meta property="og:site_name" content="{{ site.nome }}">
+{% endblock %}
 {% block conteudo %}
+{% set endereco = site.url ~ "/posts/" ~ post.slug ~ ".html" %}
 <article class="post">
-  <p class="rotulo"><a href="{{ raiz }}index.html">← Todos os resumos</a> · {{ post.data_curta }}</p>
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Início</a> · {{ post.data_curta }}</p>
   <h1>{{ post.titulo }}</h1>
+  {% if post.cidades %}<p class="etiquetas">{% for c in post.cidades %}<a class="etiqueta" href="{{ raiz }}cidade/{{ slug(c) }}.html">{{ c }}</a>{% endfor %}</p>{% endif %}
+  {% include "_compartilhar.html" %}
   <div class="texto">
     {{ post.html | safe }}
   </div>
+  {% include "_compartilhar.html" %}
   <p class="aviso">Resumo produzido a partir das fontes indicadas em cada notícia e revisado antes da publicação.
     Encontrou um erro? Escreva para <a href="mailto:{{ site.contato }}">{{ site.contato }}</a>.</p>
 </article>

@@ -1,0 +1,8 @@
+<article class="card ed-{{ slug(n.editoria) }}">
+  <p class="card-meta"><a class="card-ed" href="{{ raiz }}editoria/{{ slug(n.editoria) }}.html">{{ n.editoria }}</a>
+    {% for c in n.cidades %}· <a href="{{ raiz }}cidade/{{ slug(c) }}.html">{{ c }}</a> {% endfor %}</p>
+  <h3>{{ n.titulo }}</h3>
+  <p>{{ n.texto }}</p>
+  <p class="card-fonte">Fonte: {% for f in n.fontes %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.nome }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+    · <a href="{{ raiz }}posts/{{ n.post }}.html">resumo de {{ n.data_curta }}</a></p>
+</article>

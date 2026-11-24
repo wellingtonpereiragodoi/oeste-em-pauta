@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block titulo %}{{ nome }} · {{ site.nome }}{% endblock %}
+{% block descricao %}Notícias de {{ nome }} resumidas pelo {{ site.nome }}.{% endblock %}
+{% block conteudo %}
+<section class="cabeca-lista">
+  <p class="rotulo"><a href="{{ raiz }}index.html">← Início</a> · {{ tipo }}</p>
+  <h1>{{ nome }}</h1>
+  {% if tipo == "Cidade" %}
+  <p class="outras">{% for c in cidades if c.slug != atual %}<a href="{{ c.slug }}.html">{{ c.nome }}</a>{% endfor %}</p>
+  {% endif %}
+</section>
+
+{% for dia in dias %}
+  <h2 class="secao-titulo dia"><a href="{{ raiz }}posts/{{ dia.post }}.html">{{ dia.data_curta }}</a></h2>
+  <div class="cards">
+    {% for n in dia.itens %}{% include "_noticia.html" %}{% endfor %}
+  </div>
+{% else %}
+  <p class="vazio">Ainda não há notícias {% if tipo == "Cidade" %}de {{ nome }}{% else %}nesta editoria{% endif %} nos resumos publicados. Volte em breve!</p>
+{% endfor %}
+{% endblock %}

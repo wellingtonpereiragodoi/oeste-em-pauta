@@ -1,5 +1,187 @@
 [
   {
+    "id": "17f2f4c3b4e5",
+    "titulo": "Castello Branco terá bloqueio no km 23, em Barueri, até quarta (25)",
+    "link": "https://folhadealphaville.com.br/barueri/2026/11/24/castello-branco-tera-bloqueio-no-km-23-em-barueri-ate-quarta-25.html",
+    "resumo": "Motoristas que trafegam pela rodovia Castello Branco, em Barueri, devem ficar atentos às mudanças no trânsito na noite desta terça-feira (24). A Ecovias Raposo Castello realiza, até quarta-feira (25),...",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T11:09:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "22a80c31e06b",
+    "titulo": "Alerta de tempestade coloca Barueri em risco nesta terça",
+    "link": "https://folhadealphaville.com.br/2026/11/24/alerta-de-tempestade-coloca-barueri-em-risco-nesta-terca.html",
+    "resumo": "Barueri e a Grande São Paulo estão sob alerta laranja de perigo para tempestades nesta terça-feira (24), com previsão de ventos de até 100 km/h e chuva forte.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T10:57:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "0019c188e373",
+    "titulo": "Shopping Tamboré terá Black Friday com descontos de até 80% e roleta de prêmios",
+    "link": "https://folhadealphaville.com.br/cidades/2026/11/24/shopping-tambore-tera-black-friday-com-descontos-de-ate-80-e-roleta-de-premios.html",
+    "resumo": "O Shopping Tamboré, em Barueri, prepara uma programação especial para a Black Friday 2026, com descontos de até 80% em lojas de diferentes segmentos, como moda, beleza, acessórios, tecnologia e artigo...",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T10:27:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "593fe876dcaa",
+    "titulo": "Fatec Barueri oferece 30 vagas pelo Provão Paulista",
+    "link": "https://folhadealphaville.com.br/educacao/2026/11/24/fatec-barueri-oferece-30-vagas-pelo-provao-paulista.html",
+    "resumo": "A Fatec Barueri InovaSaúde abriu 30 vagas pelo Provão Paulista Seriado para 2027. Os estudantes habilitados devem indicar até quatro opções de curso na Vunesp até esta sexta-feira (27).",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "empregos",
+    "publicado_em": "2026-11-24T10:24:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "3b62871043f0",
+    "titulo": "Black Friday do Shopping Tamboré terá descontos de até 80% e roleta de prêmios em Barueri",
+    "link": "https://jornaldebarueri.com.br/cotidiano/black-friday-do-shopping-tambore-tera-descontos-de-ate-80-por-cento-e-roleta-de-premios-em-barueri",
+    "resumo": "Ação desta sexta-feira (27) é exclusiva para clientes do Programa de Benefícios; valor em notas fiscais varia de R$ 200 a R$ 400",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T14:48:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "96bbb97d0c31",
+    "titulo": "Dia do Doador de Sangue: veja onde doar em Barueri e como agendar",
+    "link": "https://jornaldebarueri.com.br/saude/dia-do-doador-de-sangue-veja-onde-doar-em-barueri-e-como-agendar",
+    "resumo": "Posto da Fundação Pró-Sangue fica no Centro e atende de segunda a sexta-feira, das 8h às 17h",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T14:31:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "b54df2aee503",
+    "titulo": "Polícia apreende 1,2 tonelada de maconha em caminhão na Castello Branco",
+    "link": "https://jornaldebarueri.com.br/cotidiano/policia-apreende-1-2-tonelada-de-maconha-em-caminhao-na-castello-branco",
+    "resumo": "Motorista de 32 anos foi preso durante fiscalização em Santana de Parnaíba; segundo a polícia, veículo seguia do Paraná para o Rio de Janeiro",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Santana de Parnaíba"
+    ],
+    "editoria": "policial",
+    "publicado_em": "2026-11-24T11:50:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "7d3cb284352b",
+    "titulo": "Vila Márcia recebe obras para conter erosão no rio Barueri-Mirim",
+    "link": "https://jornaldebarueri.com.br/cotidiano/vila-marcia-recebe-obras-para-conter-erosao-no-rio-barueri-mirim",
+    "resumo": "Intervenção em Barueri deve ser concluída em abril de 2027 e prevê melhorar o escoamento das chuvas",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T11:42:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "06eb5c60c7cc",
+    "titulo": "Barueri tem alerta de perigo para tempestades nesta terça-feira (24)",
+    "link": "https://jornaldebarueri.com.br/cotidiano/barueri-tem-alerta-de-perigo-para-tempestades-nesta-terca-feira-24",
+    "resumo": "Aviso do Inmet inclui a Grande São Paulo e prevê chuva forte, ventos de até 100 km/h e possibilidade de granizo",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T10:10:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "4c119fd00e49",
+    "titulo": "Apartamento ou casa em Barueri: o que pesa na escolha para alugar",
+    "link": "https://jornaldebarueri.com.br/imoveis/apartamento-ou-casa-barueri-alugar",
+    "resumo": "Rotina, custo do mês, manutenção e regras do condomínio mudam bastante entre prédio, casa de rua e casa em condomínio",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T08:00:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "091dba2480d0",
+    "titulo": "Provão Paulista tem 30 vagas na nova Fatec de Barueri; prazo vai até sexta",
+    "link": "https://jornaldebarueri.com.br/educacao/provao-paulista-tem-30-vagas-na-nova-fatec-de-barueri-prazo-vai-ate-sexta",
+    "resumo": "Candidatos da etapa final podem indicar até quatro opções de curso até 27 de novembro; vagas da InovaSaúde são para o período noturno",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "empregos",
+    "publicado_em": "2026-11-24T08:00:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "bf2cea8c5e10",
+    "titulo": "Entrega de mais de 100 matrículas definitivas de imóveis reúne famílias no Teatro de Cotia",
+    "link": "https://cotia.sp.gov.br/entrega-de-mais-de-100-matriculas-definitivas-de-imoveis-reune-familias-no-teatro-de-cotia/",
+    "resumo": "A Prefeitura de Cotia, por meio da Secretaria de Habitação, entregou 111 matrículas definitivas de imóveis na quinta-feira (19/11), no Teatro Municipal. A entrega faz parte do programa municipal de regularização fundiária e garante às famílias beneficiadas segurança jurídica sobre a propriedade de seus imóveis. Foram contemplados moradores dos bairros Belizário, Dinorah, Mirizola, Nara Lúcia,…",
+    "fonte": "Prefeitura de Cotia",
+    "fonte_id": "pref-cotia",
+    "cidades": [
+      "Cotia"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T12:48:31-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
+    "id": "61eb828feb2f",
+    "titulo": "Com apoio de drones, Prefeitura de Carapicuíba promove Dia D de Combate à Dengue no Ariston",
+    "link": "https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11363/com-apoio-de-drones-prefeitura-de-carapicuiba-promove-dia-d-de-combate-a-dengue-no-ariston/",
+    "resumo": "",
+    "fonte": "Prefeitura de Carapicuíba",
+    "fonte_id": "pref-carapicuiba",
+    "cidades": [
+      "Carapicuíba"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-24T12:00:00-03:00",
+    "coletado_em": "2026-11-24T17:10:17-03:00"
+  },
+  {
     "id": "9cba476e5505",
     "titulo": "XXII Semana Internacional de Justiça Restaurativa reúne especialistas e promove diálogos sobre diversidade",
     "link": "https://portal.barueri.sp.gov.br/Noticia/24-11-2026-xxii-semana-internacional-de-justica-restaurativa-reune-especialistas-e-promove-dialogos-sobre-diversidade",

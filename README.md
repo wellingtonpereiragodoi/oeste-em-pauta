@@ -7,7 +7,7 @@ Jandira, Cotia, Cajamar e Pirapora do Bom Jesus.
 ## Como funciona
 
 ```
- a cada 2 horas            todo dia às 6h12                 você aprova            site no ar
+ a cada 2 horas            todo dia por volta das 18h                 você aprova            site no ar
 ┌──────────────┐        ┌────────────────────┐        ┌─────────────────┐     ┌──────────────┐
 │  Coletor lê  │  ───►  │ Gemini escreve o   │  ───►  │ Pull Request no │ ──► │ GitHub Pages │
 │ RSS e páginas│        │ resumo, newsletter,│        │ GitHub: edite e │     │ publica o    │
@@ -44,7 +44,7 @@ Jandira, Cotia, Cajamar e Pirapora do Bom Jesus.
 
 ## Rotina diária (5 a 10 minutos)
 
-1. Às 6h12 o GitHub abre um Pull Request "📰 Resumo do dia …" e você recebe um aviso
+1. Por volta das 18h o GitHub abre um Pull Request "📰 Resumo do dia …" e você recebe um aviso
    (e-mail ou app do GitHub no celular).
 2. Leia o checklist na descrição do PR — ele lista as notícias policiais e o que a IA pediu para conferir.
 3. Na aba **Files changed**, leia o post (`conteudo/posts/…md`). Para corrigir: abra o arquivo,

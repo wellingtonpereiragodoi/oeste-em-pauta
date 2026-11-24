@@ -2,8 +2,8 @@ name: Rascunho do dia
 
 on:
   schedule:
-    # todo dia às 6h12 (horário de Brasília)
-    - cron: "12 9 * * *"
+    # todo dia às 17h47 (horário de Brasília = UTC-3)
+    - cron: "47 20 * * *"
   workflow_dispatch:
 
 permissions:

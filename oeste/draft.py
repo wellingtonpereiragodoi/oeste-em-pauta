@@ -22,10 +22,10 @@ from .util import (
 
 log = logging.getLogger("rascunho")
 
-ORDEM_EDITORIAS = ["politica", "policial", "empregos", "cursos", "geral"]
+ORDEM_EDITORIAS = ["politica", "policial", "empregos", "cursos", "eventos", "geral"]
 MAX_NOTICIAS = 45
 ARQ_OFERECIDAS = PASTA_DADOS.parent / "oferecidas.json"  # notícias já enviadas a um rascunho
-MAX_GERAL = 12           # notícias "gerais" (cultura, esporte, serviços) no máximo por dia
+MAX_GERAL = 12           # notícias "gerais" (esporte, obras, serviços) no máximo por dia
 IDADE_MAXIMA_HORAS = 72  # não resumir notícia publicada há mais de 3 dias
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto",
@@ -46,6 +46,9 @@ REGRAS OBRIGATÓRIAS
 4. Política: neutralidade total. Descreva o fato, sem opinião, sem adjetivos de valor e sem
    favorecer partido ou político.
 5. Empregos e cursos: destaque quantidade de vagas, prazos e como se inscrever, se informado.
+   Eventos (teatro, shows, cinema, festivais, exposições, festas populares e artistas ou
+   celebridades que vão se apresentar na região): destaque data, local e se é gratuito, se
+   informado. Esporte, obras e serviços ficam em "geral".
 6. Ignore notícias que não sejam de interesse da região ou que sejam só propaganda.
 7. Refira-se às notícias pelo campo "id" exatamente como fornecido. NÃO escreva links.
 8. Em "alertas", liste o que o editor humano deve conferir antes de publicar (ex.: notícia
@@ -57,7 +60,7 @@ Responda APENAS com um JSON neste formato:
   "descricao": "uma frase de até 160 caracteres para o Google e redes sociais",
   "abertura": "2 ou 3 frases apresentando os destaques do dia",
   "secoes": [
-    {{"editoria": "politica|policial|empregos|cursos|geral",
+    {{"editoria": "politica|policial|empregos|cursos|eventos|geral",
       "itens": [{{"id": "id da notícia", "titulo": "título reescrito", "texto": "1-2 frases"}}]}}
   ],
   "newsletter_assunto": "assunto do e-mail (até 60 caracteres, sem emoji)",
@@ -68,7 +71,7 @@ Responda APENAS com um JSON neste formato:
   "alertas": ["..."]
 }}
 Use de 5 a 8 slides no Instagram. Coloque as editorias na ordem: politica, policial,
-empregos, cursos, geral, e só inclua editorias que tenham notícias.
+empregos, cursos, eventos, geral, e só inclua editorias que tenham notícias.
 """
 
 

@@ -75,7 +75,12 @@ def test_robots_grupo_especifico():
     ("Senai abre inscrições para cursos gratuitos em Jandira", "cursos"),
     ("PM prende suspeito de roubo em Osasco", "policial"),
     ("Câmara Municipal aprova orçamento de 2027", "politica"),
-    ("Natal de Luz começa dia 27 com show", "geral"),
+    ("Natal de Luz começa dia 27 com show", "eventos"),
+    ("Teatro Municipal de Cotia recebe espetáculo infantil", "eventos"),
+    ("Senai abre curso de teatro em Barueri", "cursos"),
+    ("Corrida do Peru abre inscrições", "geral"),
+    ("Carapicuíba realiza final do Festival de Natação", "geral"),
+    ("Famílias recebem matrículas de imóveis no Teatro de Cotia", "geral"),
 ])
 def test_editorias(titulo, esperado):
     assert classificar_editoria(titulo) == esperado

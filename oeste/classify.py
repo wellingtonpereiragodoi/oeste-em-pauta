@@ -11,6 +11,7 @@ EDITORIAS = {
     "policial": "Segurança",
     "empregos": "Empregos",
     "cursos": "Cursos gratuitos",
+    "eventos": "Eventos",
     "geral": "Geral",
 }
 
@@ -40,6 +41,16 @@ PALAVRAS = {
         "tce", "tribunal de contas", "mandato", "cassacao", "audiencia publica",
         "deputado", "deputada", "governador", "secretario municipal", "secretaria municipal",
     ],
+    # cultura e entretenimento: teatro, música, cinema, festas e artistas na região
+    "eventos": [
+        "show", "shows", "mostra de teatro", "peca de teatro", "teatro infantil", "espetaculo", "espetaculos", "peca teatral", "musical",
+        "cinema", "cine", "filme", "filmes", "festival", "concerto", "orquestra", "coral",
+        "cantor", "cantora", "banda", "dupla sertaneja", "artista", "artistas", "ator", "atriz",
+        "celebridade", "humorista", "stand-up", "comedia", "exposicao", "mostra cultural",
+        "virada cultural", "evento cultural", "eventos culturais", "programacao cultural",
+        "natal de luz", "carnaval", "festa junina", "sarau", "danca", "bale", "ingressos",
+        "apresentacao musical", "atracao", "atracoes",
+    ],
 }
 
 _REGEX = {
@@ -52,14 +63,25 @@ _REGEX = {
 # No resumo elas não bastam para classificar como policial.
 POLICIAL_FRACAS = {"policia", "policial", "pm", "gcm", "guarda civil", "delegacia", "investigacao"}
 
+# Competições esportivas ("festival de natação", "games") não são eventos culturais: ficam em "geral".
+_ESPORTE = re.compile(
+    r"\b(natacao|campeonato|competicao|torneio|atleta|atletas|medalha|games|futebol|corrida|"
+    r"jogos|olimpiada|maratona|primeiro lugar|copa)\b"
+)
+
 
 def classificar_editoria(titulo: str, resumo: str = "") -> str:
     # o título pesa mais: se ele já define a editoria, o resumo não é consultado
+    texto = normalizar(f"{titulo} {resumo}")
+    esporte = bool(_ESPORTE.search(texto))
     for editoria, regex in _REGEX.items():
+        if editoria == "eventos" and esporte:
+            continue
         if regex.search(normalizar(titulo)):
             return editoria
-    texto = normalizar(f"{titulo} {resumo}")
     for editoria, regex in _REGEX.items():
+        if editoria == "eventos" and esporte:
+            continue
         achados = set(regex.findall(texto))
         if editoria == "policial":
             achados -= POLICIAL_FRACAS

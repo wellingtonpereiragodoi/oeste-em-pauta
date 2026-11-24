@@ -14,6 +14,7 @@
   --seguranca: #b91c1c;
   --empregos: #047857;
   --cursos: #7c3aed;
+  --eventos: #be185d;
   --geral: #57534e;
 }
 
@@ -54,6 +55,7 @@ a:hover { color: var(--acento); }
 .ed-seguranca { --cor: var(--seguranca); }
 .ed-empregos { --cor: var(--empregos); }
 .ed-cursos-gratuitos { --cor: var(--cursos); }
+.ed-eventos { --cor: var(--eventos); }
 .ed-geral { --cor: var(--geral); }
 
 /* home */

@@ -1,0 +1,31 @@
+**Assunto:** Milhares de vagas de emprego e destaques no Oeste paulista
+
+Olá! Selecionamos as notícias mais importantes desta terça-feira para você acompanhar tudo o que acontece na nossa região. Confira as vagas de emprego abertas e as novidades das prefeituras locais.
+
+## Política
+
+- **Carapicuíba terá transporte gratuito nos dias de eleição** (Carapicuíba) — A Prefeitura de Carapicuíba informou que os moradores contarão com transporte público gratuito durante os dias de votação nas eleições. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11248/carapicuiba-tera-transporte-gratuito-nos-dias-de-eleicao/)*
+- **Caucaia do Alto celebra 82 anos em Cotia** (Cotia) — O distrito de Caucaia do Alto completa 82 anos no dia 30 de novembro. Para comemorar a data, foi preparada uma programação voltada à história, à cultura e à valorização da pessoa idosa. *Fonte: [Prefeitura de Cotia](https://cotia.sp.gov.br/caucaia-celebra-82-anos-com-programacao-dedicada-a-historia-a-cultura-e-as-tradicoes-do-distrito/)*
+
+## Segurança
+
+- **GCM impede furto de motocicleta em Carapicuíba** (Carapicuíba) — Agentes da Guarda Civil Municipal intervieram em uma tentativa de furto de motocicleta no bairro Vila Silviania. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11345/gcm-intervem-em-tentativa-de-furto-de-motocicleta-na-vila-silviania/)*
+- **GCM de Carapicuíba recebe novos equipamentos** (Carapicuíba) — A Guarda Civil Municipal de Carapicuíba recebeu novos equipamentos com o objetivo de reforçar a segurança pública no município. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11246/gcm-de-carapicuiba-recebe-novos-equipamentos-para-reforcar-acoes-de-seguranca/)*
+- **Homem é preso por suspeita de violência doméstica em Barueri** (Barueri) — No Jardim Paraíso, um homem foi preso por suspeita de violência doméstica e ameaças contra a companheira. A Polícia Militar apreendeu uma arma de fogo na ocorrência. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/seguranca/homem-e-preso-por-violencia-domestica-em-barueri-pm-apreende-arma-de-fogo)*
+
+## Empregos
+
+- **PATs regionais somam mais de 4 mil vagas** (Santana de Parnaíba, Barueri) — Os postos de atendimento de Barueri e Santana de Parnaíba somam mais de 4,4 mil vagas de trabalho. Os interessados devem apresentar RG, CPF e Carteira de Trabalho. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/emprego-e-carreira/pats-de-barueri-e-cidades-da-regiao-oferecem-4406-vagas-de-emprego)*
+- **Cotia oferece mais de 150 oportunidades de trabalho** (Cotia) — O Posto de Atendimento ao Trabalhador de Cotia dispõe de 150 vagas nesta semana, com opções para candidatos com e sem experiência anterior. *Fonte: [Prefeitura de Cotia](https://cotia.sp.gov.br/pat-de-cotia-oferece-mais-de-150-vagas-de-emprego-para-candidatos-com-e-sem-experiencia/)*
+- **Carapicuíba abre 300 vagas para auxiliar de logística** (Carapicuíba) — A Prefeitura de Carapicuíba realiza um processo seletivo móvel para o preenchimento de 300 postos de trabalho na área de logística. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11356/prefeitura-promove-processo-seletivo-movel-com-300-vagas-para-auxiliar-de-logistica/)*
+- **Loja de materiais de construção dispõe de 100 vagas em Carapicuíba** (Carapicuíba) — Um novo processo seletivo em Carapicuíba disponibiliza 100 oportunidades profissionais para atuação em loja de materiais de construção. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11267/estao-abertas-100-vagas-de-emprego-em-loja-de-materiais-de-construcao/)*
+
+## Geral
+
+- **Santana de Parnaíba anuncia programação do Natal de Luz** (Santana de Parnaíba) — O evento Natal de Luz começa no dia 27 de novembro em Santana de Parnaíba. A abertura terá apresentações culturais e show especial de Thiago Arancam. *Fonte: [Prefeitura de Santana de Parnaíba](https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/noticia/detalhe-noticia/natal-de-luz-inicia-em-27-de-novembro-com-show-de-thiago-arancam-e-programacao-especial)*
+- **Estudantes recebem óculos de grau em Santana de Parnaíba** (Santana de Parnaíba) — A Prefeitura de Santana de Parnaíba realizou a entrega de 136 óculos de grau para estudantes matriculados na rede municipal de ensino. *Fonte: [Prefeitura de Santana de Parnaíba](https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/noticia/detalhe-noticia/prefeitura-entrega-136-oculos-de-grau-a-estudantes-da-rede-municipal)*
+- **Inscrições abertas para a 43ª Corrida do Peru em Carapicuíba** (Carapicuíba) — A Prefeitura de Carapicuíba abriu as inscrições para a 43ª edição da tradicional Corrida do Peru. *Fonte: [Prefeitura de Carapicuíba](https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11353/corrida-do-peru-2026-prefeitura-de-carapicuiba-abre-inscricoes-para-a-43-edicao-da-competicao/)*
+- **Terminal rodoviário de Santana de Parnaíba ganha Casa das Empreendedoras** (Santana de Parnaíba) — Foi inaugurada a Casa das Empreendedoras no terminal rodoviário do Centro de Santana de Parnaíba para dar apoio a negócios locais. *Fonte: [Prefeitura de Santana de Parnaíba](https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/noticia/detalhe-noticia/casa-das-empreendedoras-e-inaugurada-no-terminal-rodoviario-do-centro)*
+
+---
+Leia no site: https://wellingtonpereiragodoi.github.io/oeste-em-pauta/posts/2026-11-24.html

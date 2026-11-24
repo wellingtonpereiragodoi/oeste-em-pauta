@@ -6,9 +6,9 @@
 2. ALERTA METEOROLÓGICO: Barueri sob risco de tempestades e ventos fortes nesta terça.
 3. TRÂNSITO: Castello Branco tem bloqueio temporário no km 23, em Barueri.
 4. POLICIAL: Mais de 1 tonelada de maconha é apreendida em Santana de Parnaíba.
-5. EMPREGOS: Osasco promove feira com 300 oportunidades nesta sexta-feira (27).
-6. EDUCAÇÃO: Fatec Barueri abre 30 vagas no Provão Paulista até sexta (27).
-7. COTIA: Programa de regularização fundiária entrega 111 matrículas de imóveis.
+5. EMPREGOS: Osasco promove ação com 300 vagas nesta sexta-feira (27).
+6. CURSOS: Fatec Barueri tem 30 vagas pelo Provão Paulista; escolha até sexta (27).
+7. COTIA: Famílias recebem 111 matrículas definitivas de imóveis.
 8. Siga o perfil do Oeste em Pauta para acompanhar as novidades regionais!
 
 ## Legenda

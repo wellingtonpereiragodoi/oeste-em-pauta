@@ -92,10 +92,10 @@ def links_ja_publicados(antes_de: str) -> set[str]:
 
 
 def selecionar(momento: datetime) -> list[dict]:
-    """Notícias coletadas nas últimas 24 horas que ainda não saíram em resumos anteriores."""
+    """Notícias coletadas nas últimas 48 horas que ainda não foram usadas em rascunhos anteriores."""
     publicados = links_ja_publicados(momento.date().isoformat())
     oferecidas = set(ler_json(ARQ_OFERECIDAS, {}).get("ids", []))
-    limite = momento - timedelta(hours=24)
+    limite = momento - timedelta(hours=48)  # o registro de "oferecidas" já evita repetir
     antiga = momento - timedelta(hours=IDADE_MAXIMA_HORAS)
     noticias = []
     for d in (momento, momento - timedelta(days=1)):

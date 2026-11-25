@@ -150,6 +150,10 @@ def enriquecer(item: dict, fonte: dict, site: dict, momento: datetime) -> dict |
     editoria = classificar_editoria(item["titulo"], item["resumo"])
     if fonte.get("so_editorias") and editoria not in fonte["so_editorias"]:
         return None  # fonte estadual: só aproveita cursos/vagas
+    if fonte.get("exigir_termos"):
+        alvo = normalizar(texto)
+        if not any(normalizar(t) in alvo for t in fonte["exigir_termos"]):
+            return None
     publicado = item.get("publicado")
     if publicado and publicado < momento - timedelta(days=IDADE_MAXIMA_DIAS):
         return None

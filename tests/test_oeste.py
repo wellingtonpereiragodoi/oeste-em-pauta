@@ -306,3 +306,11 @@ def test_fonte_estadual_so_cursos_e_vagas():
     assert n["editoria"] == "cursos" and n["cidades"] == ["Estado de SP"]
     assert collect.enriquecer(outro, fonte, SITE, momento) is None
     assert classificar_editoria("Vestibulinho registra mais de 255 mil inscritos") == "cursos"
+
+
+def test_centro_paula_souza_so_oportunidades():
+    momento = datetime(2026, 11, 25, 15, 0, tzinfo=FUSO)
+    fonte = FONTES["centro-paula-souza"]
+    item = lambda t: {"titulo": t, "link": "https://x/" + t[:5], "resumo": "", "publicado": momento}
+    assert collect.enriquecer(item("Estudantes da Etec de Atibaia criam sistema"), fonte, SITE, momento) is None
+    assert collect.enriquecer(item("Vestibulinho das Etecs recebe inscrições até sexta"), fonte, SITE, momento)

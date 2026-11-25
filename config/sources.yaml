@@ -28,11 +28,14 @@ fontes:
   # ---------- Fontes estaduais (só cursos e vagas) ----------
   # so_editorias: só entram notícias classificadas nessas editorias (o resto é ignorado)
   # abrangencia: rótulo usado quando a notícia não cita nenhuma cidade da região
+# exigir_termos: a notícia só entra se tiver pelo menos um desses termos
   - id: centro-paula-souza
     nome: Centro Paula Souza (Etec/Fatec)
     tipo: rss
     url: https://www.cps.sp.gov.br/feed/
     so_editorias: [cursos]
+    # só oportunidades para o leitor (fica de fora projeto de aluno, evento, prêmio)
+    exigir_termos: [inscri, vestibulinho, vestibular, provao paulista, vagas, gratuito, matricula]
     abrangencia: Estado de SP
     ativo: true
 

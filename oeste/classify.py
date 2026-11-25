@@ -15,19 +15,20 @@ EDITORIAS = {
     "geral": "Geral",
 }
 
-# A ordem importa: a primeira editoria que bater é a escolhida.
+# A ordem importa: a primeira editoria que bater é a escolhida
+# (cursos antes de empregos: "vagas em cursos gratuitos" é curso).
 PALAVRAS = {
-    "empregos": [
-        "vaga", "vagas", "emprego", "empregos", "pat", "casa do trabalhador", "contratacao",
-        "contrata", "processo seletivo", "mutirao de emprego", "jovem aprendiz", "estagio",
-        "estagiarios", "recrutamento", "oportunidades de trabalho", "emprega sp",
-    ],
     "cursos": [
         "curso", "cursos", "capacitacao", "qualificacao", "qualifica sp", "oficina gratuita",
         "oficinas gratuitas", "senai", "senac", "etec", "fatec", "ifsp", "via rapida",
         "bolsa de estudo", "bolsas de estudo", "trampolim", "aulas gratuitas",
         "vestibulinho", "vestibular das fatecs", "provao paulista", "qualifica sp",
         "escola de oficios", "inscricoes abertas para cursos",
+    ],
+    "empregos": [
+        "vaga", "vagas", "emprego", "empregos", "pat", "casa do trabalhador", "contratacao",
+        "contrata", "processo seletivo", "mutirao de emprego", "jovem aprendiz", "estagio",
+        "estagiarios", "recrutamento", "oportunidades de trabalho", "emprega sp",
     ],
     "policial": [
         "policia", "policial", "pm", "gcm", "guarda civil", "preso", "presos", "presa", "prisao",

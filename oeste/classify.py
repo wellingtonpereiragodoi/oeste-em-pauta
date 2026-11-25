@@ -26,6 +26,8 @@ PALAVRAS = {
         "curso", "cursos", "capacitacao", "qualificacao", "qualifica sp", "oficina gratuita",
         "oficinas gratuitas", "senai", "senac", "etec", "fatec", "ifsp", "via rapida",
         "bolsa de estudo", "bolsas de estudo", "trampolim", "aulas gratuitas",
+        "vestibulinho", "vestibular das fatecs", "provao paulista", "qualifica sp",
+        "escola de oficios", "inscricoes abertas para cursos",
     ],
     "policial": [
         "policia", "policial", "pm", "gcm", "guarda civil", "preso", "presos", "presa", "prisao",

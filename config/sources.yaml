@@ -25,6 +25,25 @@ fontes:
     filtrar_regiao: true
     ativo: true
 
+  # ---------- Fontes estaduais (só cursos e vagas) ----------
+  # so_editorias: só entram notícias classificadas nessas editorias (o resto é ignorado)
+  # abrangencia: rótulo usado quando a notícia não cita nenhuma cidade da região
+  - id: centro-paula-souza
+    nome: Centro Paula Souza (Etec/Fatec)
+    tipo: rss
+    url: https://www.cps.sp.gov.br/feed/
+    so_editorias: [cursos]
+    abrangencia: Estado de SP
+    ativo: true
+
+  - id: agencia-sp
+    nome: Agência SP (Governo do Estado)
+    tipo: rss
+    url: https://www.agenciasp.sp.gov.br/feed/
+    so_editorias: [cursos, empregos]
+    abrangencia: Estado de SP
+    ativo: true
+
   # ---------- Prefeituras com RSS ----------
   - id: pref-osasco
     nome: Prefeitura de Osasco

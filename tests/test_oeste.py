@@ -293,3 +293,16 @@ def test_nao_repete_noticia_ja_oferecida(pasta_temporaria, monkeypatch):
     collect.coletar(NavegadorFalso(_paginas()), datetime(2026, 11, 23, 15, 0, tzinfo=FUSO))
     draft.gerar(datetime(2026, 11, 23, 20, 0, tzinfo=FUSO), usar_ia=False)
     assert draft.selecionar(datetime(2026, 11, 24, 6, 12, tzinfo=FUSO)) == []
+
+
+def test_fonte_estadual_so_cursos_e_vagas():
+    momento = datetime(2026, 11, 25, 15, 0, tzinfo=FUSO)
+    fonte = FONTES["agencia-sp"]
+    curso = {"titulo": "Qualifica SP abre 2,5 mil vagas em cursos gratuitos", "link": "https://x/c",
+             "resumo": "", "publicado": momento}
+    outro = {"titulo": "Nascimento de ararinha-azul no Zoológico", "link": "https://x/d",
+             "resumo": "", "publicado": momento}
+    n = collect.enriquecer(curso, fonte, SITE, momento)
+    assert n["editoria"] == "cursos" and n["cidades"] == ["Estado de SP"]
+    assert collect.enriquecer(outro, fonte, SITE, momento) is None
+    assert classificar_editoria("Vestibulinho registra mais de 255 mil inscritos") == "cursos"

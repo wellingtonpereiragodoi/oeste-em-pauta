@@ -147,6 +147,9 @@ def mesma_noticia(t1: str, t2: str) -> bool:
 
 def enriquecer(item: dict, fonte: dict, site: dict, momento: datetime) -> dict | None:
     texto = f"{item['titulo']} {item['resumo']}"
+    editoria = classificar_editoria(item["titulo"], item["resumo"])
+    if fonte.get("so_editorias") and editoria not in fonte["so_editorias"]:
+        return None  # fonte estadual: só aproveita cursos/vagas
     publicado = item.get("publicado")
     if publicado and publicado < momento - timedelta(days=IDADE_MAXIMA_DIAS):
         return None
@@ -154,11 +157,13 @@ def enriquecer(item: dict, fonte: dict, site: dict, momento: datetime) -> dict |
     if any(re.search(normalizar(p), titulo_norm) for p in site.get("ignorar_titulos", [])):
         return None
     cidades_cfg = site.get("cidades", {})
-    if fonte.get("filtrar_regiao") and not e_regional(texto, cidades_cfg, site.get("termos_regiao", [])):
+    if fonte.get("filtrar_regiao") and not fonte.get("so_editorias") and not e_regional(texto, cidades_cfg, site.get("termos_regiao", [])):
         return None
     cidades = detectar_cidades(texto, cidades_cfg)
     if fonte.get("cidade") and fonte["cidade"] not in cidades:
         cidades.insert(0, fonte["cidade"])
+    if not cidades and fonte.get("abrangencia"):
+        cidades = [fonte["abrangencia"]]
     return {
         "id": id_da_noticia(item["link"]),
         "titulo": item["titulo"],
@@ -168,7 +173,7 @@ def enriquecer(item: dict, fonte: dict, site: dict, momento: datetime) -> dict |
         "fonte": fonte["nome"],
         "fonte_id": fonte["id"],
         "cidades": cidades,
-        "editoria": classificar_editoria(item["titulo"], item["resumo"]),
+        "editoria": editoria,
         "publicado_em": publicado.isoformat() if publicado else None,
         "coletado_em": momento.isoformat(timespec="seconds"),
     }

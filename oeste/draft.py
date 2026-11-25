@@ -46,6 +46,8 @@ REGRAS OBRIGATÓRIAS
 4. Política: neutralidade total. Descreva o fato, sem opinião, sem adjetivos de valor e sem
    favorecer partido ou político.
 5. Empregos e cursos: destaque quantidade de vagas, prazos e como se inscrever, se informado.
+   Notícias com cidade "Estado de SP" valem para o estado todo: diga isso no texto e só
+   inclua as que interessam a quem mora na região (cursos gratuitos, vestibulinho, vagas).
    Eventos (teatro, shows, cinema, festivais, exposições, festas populares e artistas ou
    celebridades que vão se apresentar na região): destaque data, local e se é gratuito, se
    informado. Esporte, obras e serviços ficam em "geral".

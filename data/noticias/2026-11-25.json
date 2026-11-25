@@ -1,5 +1,145 @@
 [
   {
+    "id": "a8f035b960f6",
+    "titulo": "Barueri está entre os 11,9% de cidades com piscinões, diz IBGE",
+    "link": "https://folhadealphaville.com.br/2026/11/25/barueri-esta-entre-os-119-de-cidades-com-piscinoes-diz-ibge.html",
+    "resumo": "Pesquisa do IBGE aponta que apenas 11,9% das cidades brasileiras com drenagem possuem piscinões. Barueri integra essa minoria e conta com estruturas em operação.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T16:30:00-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "53b883dff940",
+    "titulo": "Black Friday de Itapevi terá live com oito empreendedores locais no TikTok",
+    "link": "https://jornaldebarueri.com.br/regiao/black-friday-de-itapevi-tera-live-com-oito-empreendedores-locais-no-tiktok",
+    "resumo": "Transmissão gratuita começa às 17h desta sexta-feira (27); compras serão feitas diretamente com os participantes",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Itapevi"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T18:40:00-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "6c18770dedd3",
+    "titulo": "Hospital Regional de Barueri inaugura serviço de radioterapia nesta quinta",
+    "link": "https://jornaldebarueri.com.br/saude/hospital-regional-de-barueri-inaugura-servico-de-radioterapia-nesta-quinta",
+    "resumo": "Nova estrutura poderá realizar até 21,6 mil sessões por ano pelo SUS; Estado investiu mais de R$ 22 milhões em equipamentos",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T17:49:00-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "f845d8abc56a",
+    "titulo": "Alunos da Etec de Artes estreiam adaptação de romance na Funarte SP",
+    "link": "https://www.cps.sp.gov.br/estudantes-da-etec-de-artes-estreiam-adaptacao-do-romance-a-cabeca-do-santo-na-funarte-sp/",
+    "resumo": "Apresentações gratuitas do Coletivo Faces acontecem nos dias 27 e 28 de novembro",
+    "fonte": "Centro Paula Souza (Etec/Fatec)",
+    "fonte_id": "centro-paula-souza",
+    "cidades": [
+      "Estado de SP"
+    ],
+    "editoria": "cursos",
+    "publicado_em": "2026-11-25T07:00:00-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "ed794c160962",
+    "titulo": "Vestibulinho registra mais de 255 mil inscritos para o primeiro semestre de 2027",
+    "link": "https://www.cps.sp.gov.br/vestibulinho-registra-mais-de-255-mil-inscritos-para-o-primeiro-semestre-de-2027/",
+    "resumo": "Em Guarulhos, Desenvolvimento de Sistemas integrado ao Ensino Médio alcança a maior concorrência: 23 inscritos por vaga",
+    "fonte": "Centro Paula Souza (Etec/Fatec)",
+    "fonte_id": "centro-paula-souza",
+    "cidades": [
+      "Estado de SP"
+    ],
+    "editoria": "cursos",
+    "publicado_em": "2026-11-24T10:26:16-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "ed4505f59acc",
+    "titulo": "Últimos dias para participantes do Provão Paulista escolherem cursos",
+    "link": "https://www.cps.sp.gov.br/ultimos-dias-para-participantes-do-provao-paulista-escolherem-cursos/",
+    "resumo": "Fatecs oferecem cerca de 8 mil vagas para ingresso via Provão Paulista para ingresso em 2027",
+    "fonte": "Centro Paula Souza (Etec/Fatec)",
+    "fonte_id": "centro-paula-souza",
+    "cidades": [
+      "Estado de SP"
+    ],
+    "editoria": "cursos",
+    "publicado_em": "2026-11-24T10:22:00-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "31b9331f3d74",
+    "titulo": "Workshop da Fatec Sertãozinho integra conhecimento e negócios",
+    "link": "https://www.cps.sp.gov.br/workshop-da-fatec-sertaozinho-integra-conhecimento-industria-e-negocios/",
+    "resumo": "Programação tem palestras, mesas-redondas, apresentações de projetos, cases empresariais e mais",
+    "fonte": "Centro Paula Souza (Etec/Fatec)",
+    "fonte_id": "centro-paula-souza",
+    "cidades": [
+      "Estado de SP"
+    ],
+    "editoria": "cursos",
+    "publicado_em": "2026-11-19T08:32:03-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "173b67618c86",
+    "titulo": "Estudantes da Etec de Atibaia criam sistema para controle de estoque",
+    "link": "https://www.cps.sp.gov.br/estudantes-da-etec-de-atibaia-criam-sistema-que-automatiza-o-controle-de-estoque/",
+    "resumo": "Sistema utiliza inteligência artificial e conquistou o segundo lugar na 16ª Bragantec, em Bragança Paulista",
+    "fonte": "Centro Paula Souza (Etec/Fatec)",
+    "fonte_id": "centro-paula-souza",
+    "cidades": [
+      "Estado de SP"
+    ],
+    "editoria": "cursos",
+    "publicado_em": "2026-11-19T07:50:06-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "71432399fd3c",
+    "titulo": "‘Terça do Estágio’ oferece orientação e oportunidade de estágios e Jovem Aprendiz para estudantes de Cotia",
+    "link": "https://cotia.sp.gov.br/terca-do-estagio-oferece-orientacao-e-oportunidade-de-estagios-e-jovem-aprendiz-para-estudantes-de-cotia/",
+    "resumo": "Na próxima terça-feira (01/12), a Prefeitura de Cotia, por meio da Secretaria de Trabalho e Renda, e o CIEE em Movimento promovem mais uma edição da ‘Terça do Estágio’, uma iniciativa voltada aos jovens estudantes de Cotia que estão em busca de uma oportunidade no mercado de trabalho na cidade ou na região. Nesta edição…",
+    "fonte": "Prefeitura de Cotia",
+    "fonte_id": "pref-cotia",
+    "cidades": [
+      "Cotia"
+    ],
+    "editoria": "empregos",
+    "publicado_em": "2026-11-25T16:58:39-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
+    "id": "4c7eb48b084a",
+    "titulo": "Cotia promove Virada Inclusiva com teatro sensorial, balé e atividades abertas à população",
+    "link": "https://cotia.sp.gov.br/cotia-promove-virada-inclusiva-com-teatro-sensorial-bale-e-atividades-abertas-a-populacao/",
+    "resumo": "A Prefeitura de Cotia promove, no domingo (6/12), a Virada Inclusiva 2026, com apresentações culturais, exposições e atividades de conscientização sobre os direitos das pessoas com deficiência. A programação é aberta a toda a população e acontece das 9h às 13h, no Teatro Municipal de Cotia. Com o tema “A inclusão que sonhamos, as conquistas…",
+    "fonte": "Prefeitura de Cotia",
+    "fonte_id": "pref-cotia",
+    "cidades": [
+      "Cotia"
+    ],
+    "editoria": "eventos",
+    "publicado_em": "2026-11-25T16:36:57-03:00",
+    "coletado_em": "2026-11-25T19:04:55-03:00"
+  },
+  {
     "id": "aef8e9865de9",
     "titulo": "Vagas na Swift: empresa contrata atendentes em Barueri",
     "link": "https://folhadealphaville.com.br/economia/2026/11/25/vagas-na-swift-empresa-contrata-atendentes-em-barueri.html",

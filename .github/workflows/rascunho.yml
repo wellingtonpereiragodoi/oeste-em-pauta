@@ -1,9 +1,7 @@
 name: Rascunho do dia
 
 on:
-  schedule:
-    # todo dia às 17h47 (horário de Brasília = UTC-3)
-    - cron: "47 20 * * *"
+  # disparado pela tarefa agendada do Claude (~18h40), que coleta, gera, revisa e pede aprovação
   workflow_dispatch:
 
 permissions:

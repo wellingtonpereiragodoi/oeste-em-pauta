@@ -1,5 +1,482 @@
 [
   {
+    "id": "aef8e9865de9",
+    "titulo": "Vagas na Swift: empresa contrata atendentes em Barueri",
+    "link": "https://folhadealphaville.com.br/economia/2026/11/25/vagas-na-swift-empresa-contrata-atendentes-em-barueri.html",
+    "resumo": "A Swift abriu seleção para a contratação de novos atendentes de loja em Barueri. Oportunidades abrangem unidades de Alphaville, Tamboré e outros bairros.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "empregos",
+    "publicado_em": "2026-11-25T15:52:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "cba685e5dccb",
+    "titulo": "Parque Shopping Barueri tem itens com 70% de desconto",
+    "link": "https://folhadealphaville.com.br/cidades/2026/11/25/parque-shopping-barueri-tem-itens-com-70-de-desconto.html",
+    "resumo": "A loja da L'Occitane au Brésil no Parque Shopping Barueri colocou cinco produtos com descontos de até 70% para o fim de semana de Black Friday, de 27 a 29 de novembro.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T15:30:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "3802abfb6207",
+    "titulo": "Rodovia Castello Branco: cabine de carreta cai no Rio Tietê",
+    "link": "https://folhadealphaville.com.br/2026/11/25/rodovia-castello-branco-cabine-de-carreta-cai-no-rio-tiete.html",
+    "resumo": "Um motorista de carreta está desaparecido após a cabine do veículo cair no Rio Tietê na Rodovia Castello Branco, em Barueri. O acidente provocou o bloqueio total da pista expressa no sentido Interior.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T08:42:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "cb241dcae127",
+    "titulo": "Barueri institui Agenda Jovem para moradores de 15 a 29 anos",
+    "link": "https://jornaldebarueri.com.br/cotidiano/barueri-institui-agenda-jovem-para-moradores-de-15-a-29-anos",
+    "resumo": "Decreto reúne ações de educação, cultura e trabalho; município já tem atividades de saúde mental nas escolas e apresentações nos bairros",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "politica",
+    "publicado_em": "2026-11-25T15:54:23-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "0932af6a13e9",
+    "titulo": "Magalu tem descontos de até 80% e caixas-surpresa na Black Friday",
+    "link": "https://jornaldebarueri.com.br/tecnologia/magalu-tem-descontos-de-ate-80-por-cento-e-caixas-surpresa-na-black-friday",
+    "resumo": "Segundo a empresa, condições especiais valem nas lojas, no site e no aplicativo durante novembro; em Barueri, a loja fica no piso L2 do Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "4d34b6c9bd59",
+    "titulo": "Natura do Centro Comercial Alphaville tem até 50% em perfumes e hidratantes",
+    "link": "https://jornaldebarueri.com.br/cotidiano/natura-do-centro-comercial-alphaville-tem-ate-50-por-cento-em-perfumes-e-hidratantes",
+    "resumo": "Segundo a loja, a Natura Friday tem descontos de 30%, 40% e até 50% em perfumes, hidratantes e sabonetes, além de kits; a data informada é sexta-feira (27)",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "cf6bfaf9a92a",
+    "titulo": "TIM tem iPhone 17e em 21 vezes de R$ 143 com plano na Black Friday",
+    "link": "https://jornaldebarueri.com.br/tecnologia/tim-tem-iphone-17e-em-21-vezes-de-r-143-com-plano-na-black-friday",
+    "resumo": "Ofertas de aparelhos exigem plano da operadora e valem nas lojas físicas até 1º de dezembro, segundo a TIM; em Barueri, a loja fica no piso L1 do Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "653c18dca932",
+    "titulo": "Song Friday da BYD tem King GL por R$ 147.990 em 27 e 28 de novembro",
+    "link": "https://jornaldebarueri.com.br/economia/song-friday-da-byd-tem-king-gl-por-r-147990-em-27-e-28-de-novembro",
+    "resumo": "Segundo a montadora, as concessionárias abrem das 8h às 20h nos dois dias, com taxa zero em 24 vezes nos Song; em Alphaville, a revenda Grand Brasil fica na Estrada da Aldeinha",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "5ec066a58e03",
+    "titulo": "Giraffas dá segundo estrogonofe de frango de graça até sexta-feira (27)",
+    "link": "https://jornaldebarueri.com.br/gastronomia/giraffas-da-segundo-estrogonofe-de-frango-de-graca-ate-sexta-feira-27",
+    "resumo": "Na Giraffriday, quem compra um estrogonofe de frango leva outro igual, só em pedidos no balcão ou no totem; em Barueri, a loja fica no piso L3 do Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "756e54285de2",
+    "titulo": "QÓculos do Iguatemi Alphaville tem óculos de sol com até 70% na Black Friday",
+    "link": "https://jornaldebarueri.com.br/moda/qoculos-do-iguatemi-alphaville-tem-oculos-de-sol-com-ate-70-por-cento-na-black-friday",
+    "resumo": "Segundo a loja, modelos participantes de marcas como Ray-Ban, Oakley e Prada têm de 20% a 70% de desconto até 30 de novembro, enquanto durar o estoque",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "5ec8f0ce5dfb",
+    "titulo": "Black Friday da Cobasi tem até 70% em itens pet nas lojas de Alphaville e Tamboré",
+    "link": "https://jornaldebarueri.com.br/pets/black-friday-da-cobasi-tem-ate-70-por-cento-em-itens-pet-nas-lojas-de-alphaville-e-tambore",
+    "resumo": "Campanha vai até 30 de novembro, segundo a rede, no site, no aplicativo e nas lojas; preço exclusivo da internet pode ser diferente na loja",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "9b4200d3ff1c",
+    "titulo": "Best Friday da Tok&Stok tem até 60% de desconto e loja no Iguatemi Alphaville",
+    "link": "https://jornaldebarueri.com.br/cotidiano/best-friday-da-tok-stok-tem-ate-60-por-cento-de-desconto-e-loja-no-iguatemi-alphaville",
+    "resumo": "Produtos em promoção têm o mesmo desconto no site, no aplicativo e nas lojas durante novembro, segundo a marca; parcelamento vai a 10 vezes sem juros",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:54:39-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "dc827f6bb5dc",
+    "titulo": "Panettone da Brasil Cacau sai a partir de R$ 32,99 na Black Friday",
+    "link": "https://jornaldebarueri.com.br/gastronomia/panettone-da-brasil-cacau-sai-a-partir-de-r-3299-na-black-friday",
+    "resumo": "Segundo a marca, campanha vai até 30 de novembro, com combo de três panettones por R$ 109,99 e chocolates com até 40% conforme a quantidade; em Barueri, a loja fica no Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "130b0a5559d3",
+    "titulo": "Natura tem até 70% em itens selecionados e roleta de prêmios na Black Friday",
+    "link": "https://jornaldebarueri.com.br/cotidiano/natura-tem-ate-70-por-cento-em-itens-selecionados-e-roleta-de-premios-na-black-friday",
+    "resumo": "Campanha começou em 30 de outubro e vale em lojas, franquias, site e aplicativo, segundo a marca; em Barueri, a loja fica no piso L1 do Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "cf2d5ca7802d",
+    "titulo": "Jah do Açaí dá 50% de desconto a clientes da fidelidade na sexta-feira (27)",
+    "link": "https://jornaldebarueri.com.br/gastronomia/jah-do-acai-da-50-por-cento-de-desconto-a-clientes-da-fidelidade-na-sexta-feira-27",
+    "resumo": "Em novembro, a rede dá cashback de 15% a todos os cadastrados no programa, segundo a empresa; em Barueri, a loja fica no piso L1 do Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "d55820630667",
+    "titulo": "Black Friday da Kopenhagen tem 50% na segunda unidade a partir de quinta-feira (26)",
+    "link": "https://jornaldebarueri.com.br/gastronomia/black-friday-da-kopenhagen-tem-50-por-cento-na-segunda-unidade-a-partir-de-quinta-feira-26",
+    "resumo": "Segundo a marca, desconto vale para produtos selecionados até 30 de novembro, e compras com item de Natal a partir de R$ 399,90 ganham brinde; em Barueri, a loja fica no Parque Shopping",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "7f3d18407804",
+    "titulo": "Parque Shopping Barueri faz Black Friday de 27 a 29 de novembro com descontos em moda",
+    "link": "https://jornaldebarueri.com.br/cotidiano/parque-shopping-barueri-faz-black-friday-de-27-a-29-de-novembro-com-descontos-em-moda",
+    "resumo": "Shopping do bairro Aldeia anuncia ofertas em moda feminina, masculina e infantil e reúne preços de lojas numa vitrine virtual; percentuais não foram divulgados",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "1b85945e8a4f",
+    "titulo": "Borelli tem Creme Borella por R$ 28 na Black Friday do Parque Shopping Barueri",
+    "link": "https://jornaldebarueri.com.br/gastronomia/borelli-tem-creme-borella-por-r-28-na-black-friday-do-parque-shopping-barueri",
+    "resumo": "Loja do piso L1 baixou o preço de três cremes na vitrine do shopping, que faz o fim de semana de ofertas de 27 a 29 de novembro; estoques são limitados",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "d21177a373a5",
+    "titulo": "Livraria Barco de Papel tem clássicos por R$ 24,99 na Black Friday do Parque Shopping Barueri",
+    "link": "https://jornaldebarueri.com.br/cultura/livraria-barco-de-papel-tem-classicos-por-r-2499-na-black-friday-do-parque-shopping-barueri",
+    "resumo": "Dom Casmurro e O Alienista estão entre os seis livros com preço reduzido na vitrine do shopping, que faz o fim de semana de ofertas de 27 a 29 de novembro",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:37:10-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "0124538e226e",
+    "titulo": "Bombeiros encontram corpo no Tietê durante buscas por caminhoneiro",
+    "link": "https://jornaldebarueri.com.br/cotidiano/cabine-de-carreta-cai-no-rio-tiete-apos-colisao-na-castello-branco-em-barueri-copia-mwwe4eca",
+    "resumo": "Corpo foi localizado perto da barragem de Santana de Parnaíba após acidente na Castello Branco, em Barueri; identidade ainda não foi confirmada",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Santana de Parnaíba",
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T14:23:23-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "196d30d943d0",
+    "titulo": "Blue Tree Premium Alphaville tem até 40% de desconto na Semana Black Friday",
+    "link": "https://jornaldebarueri.com.br/turismo-e-viagem/blue-tree-premium-alphaville-tem-ate-40-por-cento-de-desconto-na-semana-black-friday",
+    "resumo": "Reservas feitas até domingo (29) no site da rede valem para hospedagens até 31 de dezembro de 2027; parcelamento em até 10 vezes pode ter juros",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T13:45:09-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "09254558f2d2",
+    "titulo": "L'Occitane au Brésil tem sabonete por R$ 19,50 na Black Friday do Parque Shopping Barueri",
+    "link": "https://jornaldebarueri.com.br/cotidiano/loccitane-au-bresil-tem-sabonete-por-r-1950-na-black-friday-do-parque-shopping-barueri",
+    "resumo": "Loja do piso L1 colocou cinco produtos com preço reduzido na vitrine do shopping, que faz o fim de semana de ofertas de 27 a 29 de novembro; estoques são limitados",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T13:45:09-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "7286aeeabbee",
+    "titulo": "Cacau Show do Parque Shopping Barueri vende panettone trufado por R$ 45,49 na Black Friday",
+    "link": "https://jornaldebarueri.com.br/gastronomia/cacau-show-do-parque-shopping-barueri-vende-panettone-trufado-por-r-4549-na-black-friday",
+    "resumo": "Loja do piso L2 baixou o preço de cinco panettones na vitrine do shopping, que faz o fim de semana de ofertas de 27 a 29 de novembro; estoques são limitados",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "eventos",
+    "publicado_em": "2026-11-25T13:45:09-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "043ed6b4c8f2",
+    "titulo": "First Class Home tem jogo de cama queen por R$ 349,99 na Black Friday do Parque Shopping Barueri",
+    "link": "https://jornaldebarueri.com.br/cotidiano/first-class-home-tem-jogo-de-cama-queen-por-r-34999-na-black-friday-do-parque-shopping-barueri",
+    "resumo": "Loja de cama, mesa e banho do piso L1 baixou o preço de travesseiro, jogo de banhão e jogo de cama na vitrine do shopping; estoques são limitados",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T13:45:09-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "9b8f431cf856",
+    "titulo": "Lupo Friday tem descontos de até 70% na loja do Parque Shopping Barueri",
+    "link": "https://jornaldebarueri.com.br/moda/lupo-friday-tem-descontos-de-ate-70-por-cento-na-loja-do-parque-shopping-barueri",
+    "resumo": "Campanha vai até 30 de novembro, com 50%, 60% ou 70% de desconto em peças marcadas; cueca, legging e top têm preço fixo, segundo o regulamento da marca",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T13:45:09-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "e49e0a78563d",
+    "titulo": "Swift abre novas vagas para atendente de loja em Barueri",
+    "link": "https://jornaldebarueri.com.br/emprego-e-carreira/swift-abre-novas-vagas-para-atendente-de-loja-em-barueri",
+    "resumo": "Há oportunidades em Alphaville, Aldeia da Serra, Bethaville e Tamboré",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "empregos",
+    "publicado_em": "2026-11-25T10:47:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "c89841d516d7",
+    "titulo": "Frente fria aumenta risco de temporais em Barueri e região nesta quarta (25) e quinta-feira (26)",
+    "link": "https://jornaldebarueri.com.br/cotidiano/frente-fria-aumenta-risco-de-temporais-em-barueri-e-regiao-nesta-quarta-25-e-quinta-feira-26",
+    "resumo": "Previsão indica chuva persistente e queda de temperatura; Defesa Civil mobiliza gabinete para acompanhar os riscos no estado",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T10:20:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "1eca616be379",
+    "titulo": "Barueri terá Dia D contra a dengue na Praça do Jardim Paulista neste sábado",
+    "link": "https://jornaldebarueri.com.br/saude/barueri-tera-dia-d-contra-a-dengue-na-praca-do-jardim-paulista-neste-sabado",
+    "resumo": "Atividades ocorrem das 9h às 15h30; Barueri confirmou 43 casos nas primeiras 35 semanas de 2026",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T08:57:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "e79990865d24",
+    "titulo": "Cabine de carreta cai no Rio Tietê após colisão na Castello Branco, em Barueri",
+    "link": "https://jornaldebarueri.com.br/cotidiano/cabine-de-carreta-cai-no-rio-tiete-apos-colisao-na-castello-branco-em-barueri",
+    "resumo": "Bombeiros procuram o caminhoneiro; acidente no km 24,5 interditou a pista expressa no sentido interior",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T08:52:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "c72ab3d247bc",
+    "titulo": "Primeiro imóvel em Barueri: o que entra na conta além do preço",
+    "link": "https://jornaldebarueri.com.br/imoveis/primeiro-imovel-barueri-custos",
+    "resumo": "Além do valor anunciado, o comprador precisa somar ITBI, escritura, registro, reforma, mudança e uma reserva; as alíquotas e as tabelas mudam conforme o município e o tipo de financiamento",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T08:00:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "0f35edbada7d",
+    "titulo": "Proerd forma 2.422 alunos da rede municipal de Osasco",
+    "link": "https://osasco.sp.gov.br/proerd-forma-2-422-alunos-da-rede-municipal-de-osasco/",
+    "resumo": "Texto: Rogério Novaes Imagens: Fernanda Cazarini Na manhã de terça-feira, 24/11, a Prefeitura de Osasco, por meio da Secretaria de Educação, em parceria com a Polícia Militar do Estado de São Paulo, realizou a cerimônia de formatura de 2.422 estudantes da rede municipal de ensino no Programa Educacional de Resistência às Drogas e à Violência…",
+    "fonte": "Prefeitura de Osasco",
+    "fonte_id": "pref-osasco",
+    "cidades": [
+      "Osasco"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T15:03:45-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "4714208fba3c",
+    "titulo": "Prefeitura de Carapicuíba realiza formaturas dos alunos da rede municipal, do Proerd e da EJA",
+    "link": "https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11366/prefeitura-de-carapicuiba-realiza-formaturas-dos-alunos-da-rede-municipal-do-proerd-e-da-eja/",
+    "resumo": "",
+    "fonte": "Prefeitura de Carapicuíba",
+    "fonte_id": "pref-carapicuiba",
+    "cidades": [
+      "Carapicuíba"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T12:00:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "24503a2ce291",
+    "titulo": "Carapicuíba conquista selo Bronze por boas práticas no diagnóstico, acompanhamento e tratamento do HIV/Aids",
+    "link": "https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11365/carapicuiba-conquista-selo-bronze-por-boas-praticas-no-diagnostico-acompanhamento-e-tratamento-do-hivaids/",
+    "resumo": "",
+    "fonte": "Prefeitura de Carapicuíba",
+    "fonte_id": "pref-carapicuiba",
+    "cidades": [
+      "Carapicuíba"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T12:00:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
+    "id": "09a94c277247",
+    "titulo": "Carapicuíba promove sustentabilidade, educação ambiental e segurança alimentar com ações integradas entre secretarias",
+    "link": "https://www.carapicuiba.sp.gov.br/portal/noticias/0/3/11364/carapicuiba-promove-sustentabilidade-educacao-ambiental-e-seguranca-alimentar-com-acoes-integradas-entre-secretarias/",
+    "resumo": "",
+    "fonte": "Prefeitura de Carapicuíba",
+    "fonte_id": "pref-carapicuiba",
+    "cidades": [
+      "Carapicuíba"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-25T12:00:00-03:00",
+    "coletado_em": "2026-11-25T16:15:53-03:00"
+  },
+  {
     "id": "40d79b93d231",
     "titulo": "Natal de Luz em Santana de Parnaíba terá show de Thiago Arancam na abertura",
     "link": "https://jornaldebarueri.com.br/regiao/natal-de-luz-em-santana-de-parnaiba-tera-show-de-thiago-arancam-na-abertura",

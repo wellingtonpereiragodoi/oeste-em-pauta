@@ -1,0 +1,35 @@
+**Assunto:** Empregos, shows de Natal e novidades no Oeste Paulista
+
+Olá, leitor! Preparamos um resumo prático das principais novidades da nossa região para você começar o fim de semana informado.
+
+## Política
+
+- **Aprovado reajuste de taxas e tributos em Santana de Parnaíba** (Santana de Parnaíba) — A Câmara Municipal de Santana de Parnaíba aprovou um pacote de projetos que reajustam impostos e taxas da cidade. Com a medida, a base de cálculo do IPTU teve atualização de 5,11%. *Fonte: [Folha de Alphaville](https://folhadealphaville.com.br/2026/11/26/reajuste-do-iptu-e-taxas-sao-aprovados-em-parnaiba.html)*
+
+## Empregos
+
+- **Osasco tem seleção com 300 vagas de emprego nesta sexta** (Osasco) — O atendimento presencial aos candidatos ocorre das 9h às 16h nos bairros Munhoz Júnior e Jardim Conceição. O mutirão inclui oportunidades direcionadas para pessoas com 50 anos ou mais. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/emprego-e-carreira/osasco-realiza-sexta-dia-27-acao-de-empregabilidade-com-300-vagas-b2929e)*
+- **Alphaville oferece oportunidades no setor de atendimento** (Barueri) — Estão abertas 20 vagas de trabalho presencial no período da manhã, com remuneração de R$ 1.640 em regime CLT. A inscrição deve ser realizada por meio da plataforma QualificaOZ. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/emprego-e-carreira/alphaville-tem-20-vagas-de-atendimento-com-salario-de-rs-1640)*
+
+## Cursos gratuitos
+
+- **Estado de SP lança 6 mil vagas em capacitação na área de cosméticos** (Estado de SP) — Disponível para moradores de todo o estado de SP, o Polo de Cosméticos oferece cursos gratuitos focados em qualificação profissional e empreendedorismo para o setor. *Fonte: [Agência SP (Governo do Estado)](https://www.agenciasp.sp.gov.br/desenvolvimento/sp-lanca-polo-de-cosmeticos/)*
+- **Fundo Social de SP abre inscrições para turmas natalinas** (Estado de SP) — Com 1.185 vagas em 13 Praças da Cidadania paulistas, a iniciativa atende residentes de todo o estado. As aulas dos novos ciclos começam nos dias 30 de novembro e 7 de dezembro. *Fonte: [Agência SP (Governo do Estado)](https://www.agenciasp.sp.gov.br/social/fundo-social-cursos-natal/)*
+
+## Eventos
+
+- **Simone Mendes faz apresentação gratuita no Natal Mágico de Osasco** (Osasco) — O show sem custo da cantora ocorre neste domingo. A festividade no município tem início no sábado, dia 28, com a chegada do Papai Noel em frente ao Paço Municipal. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/variedades/simone-mendes-faz-show-gratuito-no-natal-magico-de-osasco-neste-domingo)*
+- **Santana de Parnaíba abre programação de Natal nesta sexta** (Santana de Parnaíba) — O evento Natal de Luz começa nesta sexta-feira, 27 de novembro, e contará com apresentação especial do cantor Thiago Arancam na abertura. *Fonte: [Prefeitura de Santana de Parnaíba](https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/noticia/detalhe-noticia/natal-de-luz-inicia-27-de-novembro-com-show-de-thiago-arancam-e-uma-programacao-especial)*
+- **Festival gastronômico e shows tributo chegam ao Shopping Tamboré** (Barueri) — O TorresmoFest será realizado entre os dias 3 e 6 de dezembro em Barueri, com entrada gratuita. A atração reunirá gastronomia e homenagens a bandas de rock consagradas. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/cultura/torresmofest-leva-gastronomia-e-tributos-a-queen-e-beatles-ao-shopping-tambore)*
+- **Romaria de Cotia a Pirapora tem início com caminhada noturna** (Cotia, Pirapora do Bom Jesus) — A saída do grupo de pedestres ocorre nesta sexta-feira às 21h. As atividades religiosas seguem até domingo, finalizando com atração sertaneja na Praça da Matriz de Pirapora do Bom Jesus. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/regiao/fim-de-semana-tera-a-69-romaria-de-cotia-a-pirapora-do-bom-jesus-caq9ps)*
+- **Virada Inclusiva promove ações acessíveis em Barueri e Cotia** (Barueri, Cotia) — A programação na região inclui exposição no Ganha Tempo até 9 de dezembro, modalidades de esportes adaptados no Jardim Belval e apresentação de teatro sensorial em Cotia. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/cotidiano/virada-inclusiva-2026-tera-mais-de-600-atracoes-espalhadas-por-80-municipios-de--k186zm)*
+
+## Geral
+
+- **Cotia abre cadastro para doação de enxovais no programa Mãe Cotiana** (Cotia) — As inscrições ocorrem de 1º a 10 de dezembro. A iniciativa municipal oferece um kit completo de enxoval para gestantes atendidas pelo município que cumprirem os requisitos estabelecidos. *Fonte: [Prefeitura de Cotia](https://cotia.sp.gov.br/cotia-abre-inscricoes-para-o-programa-mae-cotiana/)*
+- **Buscas por motorista no Rio Tietê continuam em Barueri** (Barueri) — Equipes acompanham a procura pelo condutor de 63 anos que caiu no rio após um acidente de trânsito na Rodovia Castello Branco na última quarta-feira. *Fonte: [Jornal de Barueri](https://jornaldebarueri.com.br/cotidiano/familia-pede-reforco-nas-buscas-por-caminhoneiro-que-caiu-no-rio-tiete-em-barueri)*
+- **Jardim Paulista recebe ação de prevenção contra a dengue em Barueri** (Barueri) — O mutirão do Dia D focado no combate aos focos do mosquito transmissor será realizado no bairro neste sábado, dia 28 de novembro. *Fonte: [Prefeitura de Barueri](https://portal.barueri.sp.gov.br/Noticia/27-11-2026-dia-d-de-combate-a-dengue-no-jardim-paulista-sera-neste-sabado-dia-28)*
+- **Hospital Regional de Barueri oferece tratamento de radioterapia** (Barueri) — A unidade de saúde pública expandiu a assistência em oncologia e passou a disponibilizar estrutura completa para procedimentos de radioterapia via SUS. *Fonte: [Prefeitura de Barueri](https://portal.barueri.sp.gov.br/Noticia/27-11-2026-hospital-regional-amplia-atendimento-oncologico-e-passa-a-oferecer-estrutura-completa-de-radioterapia-pelo-sus)*
+
+---
+Leia no site: https://oesteempauta.com/posts/2026-11-27.html

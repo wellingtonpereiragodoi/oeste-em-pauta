@@ -37,7 +37,7 @@ Jandira, Cotia, Cajamar e Pirapora do Bom Jesus.
 3. **Permissões das automações:** *Settings → Actions → General → Workflow permissions*:
    marque **Read and write permissions** e **Allow GitHub Actions to create and approve pull requests**. Salve.
 4. **Ative o site:** *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
-5. **Edite `config/site.yaml`:** o e-mail de contato do projeto é `oesteempauta@gmail.com`
+5. **Edite `config/site.yaml`:** o e-mail de contato do projeto é `contato@oesteempauta.com` (redirecionado pela Cloudflare para `oesteempauta@gmail.com`)
    (ele aparece no rodapé para pedidos de correção — isso é importante juridicamente).
 6. **Primeiro teste:** aba *Actions* → **Coletar notícias** → *Run workflow*. Depois
    **Rascunho do dia** → *Run workflow*. Em alguns minutos aparece um Pull Request na aba *Pull requests*.

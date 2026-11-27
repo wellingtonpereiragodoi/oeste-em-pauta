@@ -9,7 +9,7 @@ import requests
 
 from .robots import Robots
 
-AGENTE = "OesteEmPautaBot/1.0 (+https://wellingtonpereiragodoi.github.io/oeste-em-pauta/sobre.html)"
+AGENTE = "OesteEmPautaBot/1.0 (+https://oeste-em-pauta.pages.dev/sobre.html)"
 TEMPO_LIMITE = (10, 20)   # (conectar, esperar cada pedaço da resposta)
 TEMPO_TOTAL = 45          # segundos no máximo por página, mesmo se o site responder devagar
 TAMANHO_MAXIMO = 8_000_000

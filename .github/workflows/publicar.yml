@@ -1,14 +1,8 @@
-name: Publicar site
+name: Publicar site (GitHub Pages - desativado)
 
+# Desativado: o site agora é publicado pela Cloudflare Pages (https://oeste-em-pauta.pages.dev).
+# Ficou só o disparo manual, caso precise publicar no GitHub Pages de novo.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "conteudo/**"
-      - "templates/**"
-      - "static/**"
-      - "config/**"
-      - "oeste/build.py"
   workflow_dispatch:
 
 permissions:

@@ -11,7 +11,7 @@ segurança, empregos, cursos gratuitos. Responda sempre em português do Brasil.
   Gera `conteudo/posts/AAAA-MM-DD.md` + `rascunhos/AAAA-MM-DD/`.
 - `oeste/build.py` — gera o site estático em `_site/`.
 - `.github/workflows/` — coleta a cada 2h, rascunho diário via Pull Request (o dono aprova com Merge),
-  publicação no GitHub Pages.
+  publicação na Cloudflare Pages (https://oeste-em-pauta.pages.dev). O `publicar.yml` (GitHub Pages) ficou só com disparo manual.
 
 ## Comandos (Windows, na raiz do projeto)
 ```

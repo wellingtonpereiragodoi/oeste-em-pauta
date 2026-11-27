@@ -1,5 +1,33 @@
 [
   {
+    "id": "fe624954dccb",
+    "titulo": "Reajuste do IPTU e taxas são aprovados em Parnaíba",
+    "link": "https://folhadealphaville.com.br/2026/11/26/reajuste-do-iptu-e-taxas-sao-aprovados-em-parnaiba.html",
+    "resumo": "Os vereadores de Santana de Parnaíba aprovaram um pacote de seis projetos que reajustam impostos e taxas municipais. A base de cálculo do IPTU teve aumento de 5,11%.",
+    "fonte": "Folha de Alphaville",
+    "fonte_id": "folha-alphaville",
+    "cidades": [
+      "Santana de Parnaíba"
+    ],
+    "editoria": "politica",
+    "publicado_em": "2026-11-27T17:40:00-03:00",
+    "coletado_em": "2026-11-27T18:41:01-03:00"
+  },
+  {
+    "id": "80295be47072",
+    "titulo": "Simone Mendes faz show gratuito no Natal Mágico de Osasco neste domingo",
+    "link": "https://jornaldebarueri.com.br/variedades/simone-mendes-faz-show-gratuito-no-natal-magico-de-osasco-neste-domingo",
+    "resumo": "Programação começa no sábado (28), com desfile do Papai Noel em frente ao Paço Municipal",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Osasco"
+    ],
+    "editoria": "eventos",
+    "publicado_em": "2026-11-27T17:27:00-03:00",
+    "coletado_em": "2026-11-27T18:41:01-03:00"
+  },
+  {
     "id": "4629007d87b5",
     "titulo": "Com óbito na região e alta de notificações, Covid-19 acende alerta",
     "link": "https://folhadealphaville.com.br/2026/11/27/com-obito-na-regiao-e-alta-de-notificacoes-covid-19-acende-alerta.html",

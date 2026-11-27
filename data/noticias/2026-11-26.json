@@ -1,5 +1,34 @@
 [
   {
+    "id": "3b35271fd19a",
+    "titulo": "Romaria de Cotia a Pirapora do Bom Jesus começa nesta sexta com saída de pedestres às 21h",
+    "link": "https://jornaldebarueri.com.br/regiao/fim-de-semana-tera-a-69-romaria-de-cotia-a-pirapora-do-bom-jesus-caq9ps",
+    "resumo": "Programação vai até domingo (29) e termina com show de Marcelo Viola e Ricardo na Praça da Matriz",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Cotia",
+      "Pirapora do Bom Jesus"
+    ],
+    "editoria": "eventos",
+    "publicado_em": "2026-11-26T20:15:00-03:00",
+    "coletado_em": "2026-11-26T23:10:38-03:00"
+  },
+  {
+    "id": "0836d4c01d29",
+    "titulo": "Barueri ganha 7ª Vara Cível e reúne atendimento de sete varas em uma unidade",
+    "link": "https://jornaldebarueri.com.br/cotidiano/barueri-ganha-7a-vara-civel-e-reune-atendimento-de-sete-varas-em-uma-unidade",
+    "resumo": "Comarca tem cerca de 32 mil processos cíveis em andamento; juízes continuam a decidir de forma independente",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-26T20:02:00-03:00",
+    "coletado_em": "2026-11-26T23:10:38-03:00"
+  },
+  {
     "id": "ed09f5a9622c",
     "titulo": "Hospital Regional de Barueri inaugura serviço de radioterapia e terá braquiterapia 3D pelo SUS",
     "link": "https://jornaldebarueri.com.br/saude/governo-de-sp-entrega-servico-de-radioterapia-e-amplia-atendimento-contra-o-canc-a9i4zp",
@@ -11,7 +40,13 @@
     ],
     "editoria": "geral",
     "publicado_em": "2026-11-26T17:02:00-03:00",
-    "coletado_em": "2026-11-26T18:40:54-03:00"
+    "coletado_em": "2026-11-26T18:40:54-03:00",
+    "outras_fontes": [
+      {
+        "fonte": "Jornal de Barueri",
+        "link": "https://jornaldebarueri.com.br/cotidiano/governo-de-sp-entrega-servico-de-radioterapia-e-amplia-atendimento-contra-o-canc-a9i4zp"
+      }
+    ]
   },
   {
     "id": "eda48830ce9b",

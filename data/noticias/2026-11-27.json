@@ -1,5 +1,33 @@
 [
   {
+    "id": "059a76f2657f",
+    "titulo": "Barueri tem teatro e música gratuitos na Mostra de Artes e Cultura neste fim de semana",
+    "link": "https://jornaldebarueri.com.br/cultura/barueri-tem-teatro-e-musica-gratuitos-na-mostra-de-artes-e-cultura-neste-fim-de-semana",
+    "resumo": "Programação começa às 11h no sábado (28) e no domingo (29), na Praça das Artes e no Centro de Eventos",
+    "fonte": "Jornal de Barueri",
+    "fonte_id": "jornal-barueri",
+    "cidades": [
+      "Barueri"
+    ],
+    "editoria": "geral",
+    "publicado_em": "2026-11-27T18:44:00-03:00",
+    "coletado_em": "2026-11-27T22:59:56-03:00"
+  },
+  {
+    "id": "54c497337baa",
+    "titulo": "Luzes, magia e espetáculo: confira a programação do Natal dos Sonhos 2026 em Cotia",
+    "link": "https://cotia.sp.gov.br/luzes-magia-e-espetaculo-confira-a-programacao-do-natal-dos-sonhos-2026-em-cotia/",
+    "resumo": "A magia do Natal já está tomando conta de Cotia. A Prefeitura de Cotia promove, a partir do dia 4 de dezembro, a segunda edição do Natal dos Sonhos, com uma programação especial preparada para reunir famílias, celebrar o espírito natalino e proporcionar momentos de lazer e encantamento à população. Assim como na edição anterior,…",
+    "fonte": "Prefeitura de Cotia",
+    "fonte_id": "pref-cotia",
+    "cidades": [
+      "Cotia"
+    ],
+    "editoria": "eventos",
+    "publicado_em": "2026-11-27T20:14:44-03:00",
+    "coletado_em": "2026-11-27T22:59:56-03:00"
+  },
+  {
     "id": "fe624954dccb",
     "titulo": "Reajuste do IPTU e taxas são aprovados em Parnaíba",
     "link": "https://folhadealphaville.com.br/2026/11/26/reajuste-do-iptu-e-taxas-sao-aprovados-em-parnaiba.html",
@@ -25,7 +53,13 @@
     ],
     "editoria": "eventos",
     "publicado_em": "2026-11-27T17:27:00-03:00",
-    "coletado_em": "2026-11-27T18:41:01-03:00"
+    "coletado_em": "2026-11-27T18:41:01-03:00",
+    "outras_fontes": [
+      {
+        "fonte": "Jornal de Barueri",
+        "link": "https://jornaldebarueri.com.br/entretenimento/simone-mendes-faz-show-gratuito-no-natal-magico-de-osasco-neste-domingo"
+      }
+    ]
   },
   {
     "id": "4629007d87b5",
@@ -111,7 +145,13 @@
     ],
     "editoria": "geral",
     "publicado_em": "2026-11-27T10:32:00-03:00",
-    "coletado_em": "2026-11-27T15:59:23-03:00"
+    "coletado_em": "2026-11-27T15:59:23-03:00",
+    "outras_fontes": [
+      {
+        "fonte": "Jornal de Barueri",
+        "link": "https://jornaldebarueri.com.br/noticias/barueri-tem-previsao-de-chuva-fraca-nesta-sexta-feira-27-e-de-temporal-no-sabado-28"
+      }
+    ]
   },
   {
     "id": "2fe45daf88e4",
